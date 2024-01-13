@@ -1,0 +1,134 @@
+body{
+    background: url(../images/Background.png) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding:10px;
+}
+
+/* Setting alignment for the main card */
+.maincard{
+    max-width:400px;
+    margin:85px auto;
+}
+
+/* Styling the main heading */
+.topcard{
+    background: #2355f2 url(../images/Pattern.png) no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Styles for the top card heading */
+.topcard h1{
+  font-family: 'Roboto';
+  font-size:2em;
+  padding:20px;
+  text-align: center;
+  max-width:300px;
+  line-height: 40px;
+  margin:0 auto;
+  color: aliceblue;
+}
+
+
+/* Styling the second half portion of the card */
+.subcard{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: -10px;
+}
+
+/* Font styling for "Receive daily emails..." */
+.subcard h2{
+   color:#6f6f6f;
+   font-size: 1.05em;
+   font-family: 'Lato';
+   padding:35px;
+   text-align: center; 
+}
+
+/* Styling the form */
+.form{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+input{
+    height:30px;
+    background-color: #f5f7fa;
+    border: 1px solid #eaecf2;
+    border-radius: 5px;
+    width: 215px;
+}
+
+/* Styling the subscribe button */
+button{
+    font-family:'Roboto';
+    color:white;
+    font-size: 1em;
+    background-color: #2355f2;
+    border-radius: 5px;
+    border:none;
+    height:36px;
+    letter-spacing: 1px;
+    padding:0px 22px;
+    cursor: pointer;
+}
+
+/* Styling the font for form subtext */
+.spam{
+    font-family: 'Roboto';
+    color:#6f6f6f;
+    padding: 10px 25px 20px;
+}
+
+/****************************
+Styling the testimonial part 
+****************************/
+
+/* Styling the profile */
+.profile{
+display: flex;
+margin:0 auto;
+max-width: 200px;
+}
+
+.profilename {
+    font-family: 'Lato';
+    padding:10px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.job{
+    color:#6f6f6f;
+    font-size:0.800em;
+}
+
+
+/* Styling the main quote for testimonial */
+.quote{
+    font-family: 'Lato';
+    color:#6f6f6f;
+    text-align: center;
+    padding: 10px 20px 30px 20px;
+}
+
+/* Setting styles for bigger screens */
+@media screen and (min-width:1040px) {
+    body{
+        background: url(../images/Background.png) no-repeat;
+        background-size:cover;
+        height: 100%;
+    }
+
+    .maincard{
+        margin: auto;
+        position: relative;
+        margin-top: 80px;
+    }
+}

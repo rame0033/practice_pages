@@ -1,0 +1,44 @@
+/*Global styles*/
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px 20px 15px;
+    line-height: 1.8rem;
+}
+
+p {
+    font-weight: 400;
+    text-align: center;
+    padding: 5px 20px 30px;
+    line-height: 1.2rem;
+    color: hsl(220, 15%, 55%);
+}
+
+main {
+    max-width: 350px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Max-width setting for the qr code */
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main_img {
+    padding: 10px;
+}
+
+footer{
+    margin-top: -60px;
+}

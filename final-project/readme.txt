@@ -1,0 +1,2 @@
+Final-project
+ In this project, we are tasked to build a website based on what we learned throughout the semester along with embedding fonts and maps, and how to use css. For example the max-width for the whole page is set to 1200px with background bleeding in some sections, the use of media queries to fit the layout for various screen sizes, and the use of flexbox and grids.

@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 5rem 0 2rem;
+    background-color: #0000000f;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+main {
+    display: grid;
+    gap: 1%;
+    padding:0 1rem 6rem;
+}
+
+h1 {
+    font-size: 2em;
+    padding-top:1rem;
+}
+
+.card1 h1,
+.card1 h2,
+.card2 h1,
+.card2 h2,
+.card4 h1,
+.card4 h2 {
+    color: white;
+    line-height: 1.7rem;
+}
+
+.card3 h1,
+.card5 h1{
+    line-height: 1.7rem;
+}
+
+h2 {
+    font-size: 1.15em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.card1 p,
+.card2 p,
+.card4 p{
+    color: hsl(0deg 0% 78.32%);
+}
+
+.card3 p,
+.card5 p{
+    color: hsl(0deg 0.61% 55.43%);
+}
+
+/* Profile default styles */
+.profile {
+    display: flex;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.name {
+    padding: 5px;
+}
+
+/* Spacing between main testament and quote */
+.text p{
+    padding-top:1rem;
+    line-height: 1.5rem;
+}
+/* Styling the cards */
+.card1 {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 5% right 5%;
+    background-color: hsl(263, 55%, 52%);
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px hsl(0, 0%, 81%);
+}
+
+.card2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px hsl(0, 0%, 81%);
+}
+
+.card4 {
+    background-color: hsl(219, 29%, 14%);
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px hsl(0, 0%, 81%);
+}
+
+.card3,
+.card5 {
+    background-color: white;
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px hsl(0, 0%, 81%);
+
+}
+
+footer{
+    text-align: center;
+}
+
+@media screen and (min-width:1000px){
+    main {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap: 2%;
+        grid-template-areas: 
+        "ser1 ser1 ser2 ser5"
+        "ser3 ser4 ser4 ser5"
+        ;
+    }
+
+    .name{
+        line-height: 1.4rem;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .card1{
+        grid-area: ser1;
+    }
+    
+    .card2{
+        grid-area: ser2;
+    }
+
+    .card3{
+        grid-area: ser3;
+    }
+
+    .card4{
+        grid-area: ser4;
+    }
+
+    .card5{
+        grid-area: ser5;
+    }
+
+}

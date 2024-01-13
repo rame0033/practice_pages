@@ -1,0 +1,324 @@
+/*************
+Global Styles
+*************/
+
+body {
+    background-color: #f9f4e8;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair', serif;
+}
+
+a,
+p,
+button {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+a,
+p {
+    color: #565656;
+}
+
+/* Setting default margin and width */
+.masthead,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/****************
+   Header style
+*****************/
+
+header {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+}
+
+.masthead {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logowrap {
+    display: flex;
+}
+
+.logowrap img {
+    padding-right: 20px;
+    height: 30px;
+}
+
+.logowrap p {
+    background: linear-gradient(90deg, rgba(234, 181, 80, 1) 25%, rgba(234, 82, 118, 1) 65%);
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 0.700em;
+    color: #f9f4e8;
+    margin-top: 5px;
+}
+
+.icon {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+
+#check {
+    display: none;
+}
+
+/************
+Main landing
+************/
+
+.imgwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.imgwrap img {
+    width: 500px;
+}
+
+/* Landing page text wrap */
+.textwrap {
+    padding: 0px 10px;
+}
+
+/* Main heading */
+.maintxt h1 {
+    font-size: 3.375em;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+/* Styling the main text first paragraph */
+.maintxt p {
+    line-height: 20px;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+/* Styling form*/
+
+.landform {
+    display: block;
+}
+
+/*input */
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+/* Button */
+button {
+    color: #f9f4e8;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #4977ea;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Spam text here */
+.spam {
+    display: flex;
+    padding-top: 10px;
+}
+
+.spam p {
+    padding: 5px;
+}
+
+/* Footer section */
+
+footer {
+    display: block;
+    flex-wrap: wrap;
+}
+
+.socmed {
+    flex-grow: 1;
+    padding-left: 10px;
+    margin-top: 20px;
+    ;
+}
+
+.socmed a {
+    margin-left: 10px;
+}
+
+.mainhelp {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.helptxt {
+    padding: 10px;
+}
+
+.helptxt h2 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.helptxt p {
+    font-size: 0.800em;
+    font-weight: 600;
+    color: black;
+}
+
+@media screen and (max-width:760px) {
+
+    .imgwrap img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+
+    /* Form on inline display */
+    .mainput {
+        display: flex;
+    }
+
+    input {
+        width: 60%;
+        margin-right: 5px;
+        ;
+    }
+
+    button {
+        width: 30%;
+        height: 50px;
+        margin-top: 1px;
+    }
+
+}
+
+/* Adding media query for tablet screen */
+@media screen and (max-width:1029px) {
+    header {
+        background: black;
+    }
+
+    .logowrap img {
+        padding-right: 20px;
+        height: 30px;
+        filter: invert(100%);
+    }
+
+    /* Styling the hamburger and close icon */
+    .icon {
+        display: block;
+        padding-top: 4px;
+    }
+
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+
+    .icon #close {
+        display: none;
+    }
+
+    #check:checked~.icon #close {
+        display: block;
+    }
+
+    /* Styling the navigation bar on click */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: black;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 8rem;
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+
+    main {
+        padding: 0px 15px;
+    }
+
+    .maintxt h1 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width:1250px) {
+
+    /* Removing background color on header */
+    header {
+        background: none;
+    }
+
+    .navbar {
+        margin-top: 8px;
+    }
+
+    /* Add spacing on navigation links */
+    .navbar a {
+        margin-left: 2.5em;
+    }
+
+    /* Flex display on the main landing */
+    main {
+        display: flex;
+    }
+
+    /* Main image on half width */
+    .imgwrap {
+        order: 2;
+        padding-left: 150px;
+    }
+
+    /* Text wrap on half width */
+    .textwrap {
+        order: 1;
+        width: 50%;
+        margin-top: 150px;
+    }
+
+    /* Styling the footer for bigger screens*/
+    footer {
+        display: flex;
+        padding: 30px 0px;
+    }
+
+    .socmed {
+        margin-top: 50px;
+    }
+}

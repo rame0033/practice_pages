@@ -1,0 +1,170 @@
+/**************
+ Global Styles
+**************/
+body {
+    background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    background-position: 50% -5%;
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+.button {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Font size for the heading */
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 30px 0px 20px;
+}
+
+/* Font-size for the paragraph */
+p {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Alignment setting for the page */
+main,
+article,
+footer {
+    margin: 0 auto;
+    max-width: 1450px;
+    padding: 0 20px
+}
+
+p,
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.logo-wrap img {
+    padding: 1.5rem 1rem;
+    width: 100px;
+}
+
+.imgwrap img {
+    width: 100%;
+}
+
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the button */
+.btn a {
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    padding: 20px 90px;
+    border-radius: 50px;
+    box-shadow: -2px 0px 22px #4f2776;
+    transition: all 0.2s ease-out;
+}
+
+.btn {
+    position: relative;
+    margin-top: 8vh;
+}
+
+/* Socmed styling */
+.socmed {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto 1rem;
+    gap: 5%;
+}
+
+/* Font size and adding border to socmed icons */
+.socmed a {
+    font-size: 1rem;
+    text-align: center;
+    width: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer {
+    font-size: 0.667em;
+    padding: 20px 0px;
+}
+
+/* Hover state */
+.btn a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.socmed a:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width:1200px) {
+
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: contain;
+    }
+
+    /* Re-sizing the logo */
+    .logo-wrap img {
+        width: 150px;
+        padding-left: 60px;
+    }
+
+    /* Changing the display to flex */
+    .main-wrap {
+        display: flex;
+    }
+
+    .imgwrap {
+        width: 50%;
+        margin-top:3vh;
+    }
+
+    /* Alignment setting for the text wrap */
+    .text-wrap {
+        width: 43%;
+        padding-left: 5rem;
+        align-items: flex-start;
+        margin-top: 7vh;
+    }
+
+    .text-wrap h1,
+    .text-wrap p {
+        text-align: left;
+    }
+
+    /* Font-size for heading */
+    .text-wrap h1 {
+        font-size: 3.375em;
+    }
+
+    .socmed {
+        margin-top: 0.1rem;
+        margin-right: 1rem;
+    }
+}

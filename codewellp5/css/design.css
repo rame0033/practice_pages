@@ -1,0 +1,619 @@
+/* Global styles */
+h1 {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 1.5em;
+    color: #3180f5;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Open Sans';
+}
+
+a,
+p,
+li,
+span {
+    font-family: 'Roboto';
+}
+
+.image1 img,
+.image2 img {
+    width: 100%;
+}
+
+header {
+    background-color: #fbf8f3;
+}
+
+/*********** 
+ Navigation
+***********/
+
+/* Styling the navigation */
+.masthead {
+    padding: 20px 30px;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logowrap {
+    display: flex;
+    flex-grow: 1;
+}
+
+.logowrap img {
+    margin-top: 6px;
+    margin-left: -30px;
+    height: 30px;
+}
+
+/* Default style for the hamburger and x icon */
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+
+#check {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+/* Styling the drop down menu for navigation */
+.navbar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+nav>*:nth-of-type(4) {
+    background-color: #00acee;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the banner */
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagewrap {
+    padding: 10px;
+}
+
+/* The hero image for tablet version will be hidden */
+.image2 {
+    display: none;
+}
+
+/* Formatting the banner text */
+.bannertxt {
+    padding: 0px 10px;
+}
+
+.bannercopy h2 {
+    font-size: 1.9em;
+    line-height: 35px;
+}
+
+.bannercopy p {
+    line-height: 25px;
+    padding: 10px 0px;
+    color: #737373;
+}
+
+/* Sign in button styles */
+.sign_in {
+    background-color: #00acee;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.learn a {
+    display: flex;
+    color: #1f7898;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    justify-content: center;
+    padding: 22px;
+}
+
+.learn p {
+    font-size: 1.125em;
+    margin-top: 2px;
+    padding-right: 3px;
+}
+
+/* Formatting the avatars */
+.avatars {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/* Styling the avatars to slightly stack each other */
+.avatars img {
+    margin-left: -17px;
+}
+
+/* Styling the last paragraph of the banner */
+.usertxt p {
+    color: #737373;
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+.usertxt span {
+    color: #1f7898;
+    font-weight: bold;
+}
+
+/* Features section */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 23px 0px;
+    display: grid;
+    gap: 30px;
+}
+
+.features h3 {
+    max-width: 80%;
+    font-size: 1.5em;
+}
+
+.features h4 {
+    padding: 5px 0px;
+}
+
+.features p {
+    font-size: 0.8em;
+    color: #737373;
+    line-height: 20px;
+}
+
+.features img {
+    width: 30px;
+}
+
+/* Adding border to the cards */
+.card {
+    border: 1px solid #737373;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Testimonials section */
+.testimonials {
+    background-color: #d7f5f5;
+    margin-top: 10vh;
+    padding-bottom: 25px;
+}
+
+.testimonials h3 {
+    font-size: 2em;
+    padding: 30px 10px;
+}
+
+/* Setting the wrap for the three cards */
+.custom-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the client cards */
+.customcard {
+    background-color: white;
+    width: 320px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Styling the profile and twitter icon */
+.customer {
+    display: flex;
+    padding-top: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-grow: 1;
+}
+
+.profilename {
+    margin-top: 2px;
+    padding-left: 5px;
+    line-height: 19px;
+}
+
+.profilename p {
+    color: #737373;
+    font-size: 0.667em;
+}
+
+.twittericon img {
+    padding-right: 10px;
+}
+
+/* Styling the testimonial text */
+.testimonial p {
+    color: #737373;
+    line-height: 25px;
+    padding: 10px 5px;
+}
+
+/* Styling the likes and date font */
+.subtext {
+    display: flex;
+    padding: 0px 6px 5px;
+}
+
+.likes {
+    display: flex;
+    flex-grow: 1;
+}
+
+.likes img {
+    width: 20px;
+}
+
+.likes p {
+    padding: 5px;
+}
+
+.subtext p,
+.subtext span {
+    color: #737373;
+}
+
+.subtext span {
+    margin-top: 5px;
+}
+
+/* Pricing section */
+
+
+/* Styling the header and paragraph */
+.txtwrap {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 12px 30px;
+    line-height: 35px;
+}
+
+.txtwrap h3 {
+    font-size: 2em;
+}
+
+.txtwrap p {
+    color: #737373;
+    font-size: 1em;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.card_wrap {
+    padding: 0 10px 40px;
+}
+
+/* Styling the price card */
+.price_card {
+    background-color: #fbf8f3;
+    border: 1px solid #ffd793;
+    max-width: 470px;
+    margin: 0 auto;
+    padding: 45px 20px 30px;
+    border-radius: 10px;
+}
+
+/* Div containing the price */
+.headprice h6 {
+    font-family: 'Roboto';
+    color: #737373;
+    font-size: 1.5em;
+}
+
+.headprice span {
+    font-size: 5.063em;
+    font-weight: bold;
+}
+
+.linewrap {
+    display: flex;
+    padding: 10px 0px 20px;
+}
+
+.linewrap h6 {
+    margin-top: 47px;
+}
+
+/* Styling the checklist */
+
+.checklist ul {
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    list-style-type: none;
+    /* Remove default list styles */
+}
+
+.checklist li {
+    color: #737373;
+    line-height: 30px;
+    padding-left: 50px;
+    text-indent: -20px;
+}
+
+.checklist li:first-child {
+    padding-top: 23px;
+}
+
+.checklist li:last-child {
+    padding-bottom: 23px;
+}
+
+.cardbtn {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #d7f5f5;
+    padding: 10px 15px;
+    line-height: 40px;
+}
+
+.copyright {
+    display: flex;
+
+}
+
+.copyright a {
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+.text {
+    margin-top: -2px;
+}
+
+@media screen and (max-width:1000px) {
+
+    /* Aligning the twitter icon and text */
+    .iconnav {
+        padding-right: 5px;
+    }
+
+    .sign_in span {
+        padding: 2px 0px
+    }
+
+    .navbar span {
+        padding-top: 3px;
+    }
+
+    .icon {
+        display: block;
+        padding-top: 4px;
+        margin-right: -15px;
+    }
+
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+
+    .icon #close {
+        display: none;
+    }
+
+    #check:checked~.icon #close {
+        display: block;
+    }
+
+    /* Styling the navigation bar on click */
+    .navbar {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #fbf8f3;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 12rem;
+    }
+
+    .testimonials h3{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:706px) and (max-width:1020px) {
+
+    .banner-container {
+        padding: 0px 30px;
+    }
+
+    /* Banner image for the tablet version will be visible */
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: contents;
+    }
+
+    /* Banner text will occupy 70% of the display width */
+    .bannercopy h2 {
+        font-size: 3em;
+        line-height: 50px;
+    }
+
+    .buttons {
+        display: flex;
+        padding: 20px 0px;
+    }
+
+    .buttons .sign_in {
+        width: 237px;
+    }
+
+    .testimonials h3 {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width:1021px) {
+
+    /* Styling the header */
+     .masthead{
+        padding:45px 0px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    nav>*:nth-of-type(4) {
+        background-color: #00acee;
+        font-weight: 600;
+        color: white;
+        padding: 15px 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: -8px;
+        margin-left: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        padding: 20px 0px;
+    }
+
+    .buttons .sign_in {
+       height:20px;
+       width:195px;
+    }
+
+    /* Styling the banner to flex display */
+    .banner-container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom:80px;
+    }
+
+    /* Setting the position of banner text */
+    .bannertxt{
+        width:60%;
+        padding-right: 132px;
+        margin-top: 85px;
+    }
+    
+    .bannercopy h2{
+        font-size: 3.375em;
+        line-height: 63px;
+    }
+    /* Position setting for banner image */
+    .imagewrap {
+    width:40%;
+    }
+
+    
+    /* Displaying grid property in features picture */
+    .features{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "header header"
+        "ser1 ser3"
+        "ser2 ser4"
+        ;
+    }
+    
+    .features h3{
+        font-size: 2.25em;
+        max-width:40%;
+        grid-area: header;
+    }
+
+    .feat1{
+        grid-area; ser1;
+    }
+
+    .feat2{
+        grid-area:ser3;
+    }
+
+    .feat3{
+        grid-area:ser2;
+    }
+
+    /* Aligning testimonials into one row */
+
+    .testimonials{
+        padding-bottom: 50px;
+    }
+
+    .testimonials h3{
+        padding-left:160px;
+        padding-top:50px;
+    }
+
+    .custom-wrap{
+        flex-direction: row;
+        max-width: 1100px;
+        margin:0 auto;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+/* Footer section */
+    .footer-wrap{
+        display: flex;
+        max-width: 1200px;
+        margin:0 auto;
+        padding:20px;
+    }
+
+    .logo-footer{
+        flex-grow: 1;
+    }
+
+    .copyright{
+        margin-top:5px;
+    }
+
+    /* Spacing for copyright anchor tags */
+    .copyright a{
+        margin-left: 20px;
+    }
+}

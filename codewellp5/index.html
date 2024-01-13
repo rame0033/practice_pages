@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codewell Practice p1</title>
+    <!-- Stylesheets here -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design.css">
+    <!-- Font goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- icon here -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header navigation and welcome text here -->
+    <header>
+        <div class="masthead">
+            <!-- Logo here -->
+            <div class="logowrap">
+                <h1>Chirp.</h1>
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icon">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close"></i>
+            </label>
+
+            <!-- Navigation -->
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">
+                    <div class="iconnav"><img src="images/twitter.svg" alt="#"></div><span> Sign in with Twitter</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Banner goes here -->
+        <div class="banner-container">
+            <!-- Image containing the analytics with variations for tablet/desktop and mobile -->
+            <div class="imagewrap">
+                <div class="image1">
+                    <img src="images/hero_desktop.png" alt="Graph showing followers analytics">
+                </div>
+                <div class="image2">
+                    <img src="images/hero_tab.png" alt="Graph showing followers analytics">
+                </div>
+            </div>
+            <!-- Main copy for banner goes here -->
+            <div class="bannertxt">
+                <div class="bannercopy">
+                    <h2>Twitter analytics taken to a whole new level.</h2>
+                    <p>Chirp is a suite of Twitter analytics that will help you better understand your audience, which
+                        tweets they like, and most importantly, when they are the most active on Twitter.</p>
+                </div>
+                <!-- SignIn and learn more buttons -->
+                <div class="buttons">
+                    <div class="sign_in">
+                        <div class="iconnav"><img src="images/twitter.svg" alt="#"></div><span> Sign in with
+                            Twitter</span></a>
+                    </div>
+                    <div class="learn">
+                        <a href="#">
+                            <p>Learn More</p><span class="material-symbols-outlined">
+                                east
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Avatar container -->
+                <div class="avatars">
+                    <img src="images/userAvatar01.svg" alt="Avatar">
+                    <img src="images/userAvatar02.svg" alt="Avatar">
+                    <img src="images/userAvatar03.svg" alt="Avatar">
+                    <img src="images/userAvatar04.svg" alt="Avatar">
+                    <img src="images/userAvatar05.svg" alt="Avatar">
+                    <img src="images/userAvatar06.svg" alt="Avatar">
+                    <img src="images/userAvatar07.svg" alt="Avatar">
+                    <img src="images/userAvatar08.svg" alt="Avatar">
+                    <img src="images/userAvatar09.svg" alt="Avatar">
+                </div>
+                <div class="usertxt">
+                    <!-- Main text last paragraph displayed here -->
+                    <p>Join <span>195</span> others who have analyzed their followers and scheduled <span>1342</span>
+                        tweets!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="features">
+        <h3>Features that help you Tweet smarter.</h3>
+        <!-- Features shown here -->
+        <div class="feat1">
+            <div class="card">
+                <div class="emoji">
+                    <img src="images/chart.png" alt="Chart">
+                </div>
+                <div class="textwrap">
+                    <h4>Analytics</h4>
+                    <p>We constantly monitor your audience as it grows — so you can Tweet when your followers are most
+                        likely to be online and ready to engage with your content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feat2">
+            <div class="card">
+                <div class="emoji">
+                    <img src="images/nerd.png" alt="Nerd Emoji">
+                </div>
+                <div class="textwrap">
+                    <h4>Smart Analyzer</h4>
+                    <p>Chirp automatically recognizes your followers' most active times and automatically sends you
+                        notifications if you're missing out an opportunity.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- row 2 cards in here -->
+        <div class="feat3">
+            <div class="card">
+                <div class="emoji">
+                    <img src="images/newspaper.png" alt="Rolled Newspaper">
+                </div>
+                <div class="textwrap">
+                    <h4>Schedule Your Tweets</h4>
+                    <p>Quality tweets drive tons of engagement. With Chirp, you can write tweets in an advance and
+                        schedule them when your audience is most likely to read.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feat4">
+            <div class="card">
+                <div class="emoji">
+                    <img src="images/crescent.png" alt="Nerd Emoji">
+                </div>
+                <div class="textwrap">
+                    <h4>Dark Mode</h4>
+                    <p>Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to make
+                        sure your eyes are at ease at all times.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Client testimonials go here -->
+    <section class="testimonials">
+        <h3>What our customers say</h3>
+        <div class="custom-wrap">
+            <!-- In each card, client profile and testimonial will be shown -->
+            <div class="cardwrap">
+                <div class="customcard">
+                    <div class="customer">
+                        <!-- Main profile -->
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="images/userAvatar01.svg" alt="#">
+                            </div>
+                            <div class="profilename">
+                                <h5>Sara May</h5>
+                                <p>@sara_may</p>
+                            </div>
+                        </div>
+                        <div class="twittericon">
+                            <img src="images/twitter2.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <p>I just tried out @chirp and it's amazing, love all the analytics i can see.</p>
+                    </div>
+                    <!-- Likes and date published -->
+                    <div class="subtext">
+                        <div class="likes">
+                            <img src="images/like.svg" alt="Heart">
+                            <p>2</p>
+                        </div>
+                        <span>June 2, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardwrap">
+                <div class="customcard">
+                    <div class="customer">
+                        <!-- Main profile -->
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="images/userAvatar04.svg" alt="#">
+                            </div>
+                            <div class="profilename">
+                                <h5>Jack Scott</h5>
+                                <p>@jackscott_</p>
+                            </div>
+                        </div>
+                        <div class="twittericon">
+                            <img src="images/twitter2.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <p>I initially started using Chirp to support the co-founder as I personally knew him, but after
+                            having tried it out for a few weeks, I can genuinely sai this changed my Twitter game.</p>
+                    </div>
+                    <!-- Likes and date published -->
+                    <div class="subtext">
+                        <div class="likes">
+                            <img src="images/like.svg" alt="Heart">
+                            <p>32</p>
+                        </div>
+                        <span>July 21, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardwrap">
+                <div class="customcard">
+                    <div class="customer">
+                        <!-- Main profile -->
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="images/userAvatar06.svg" alt="#">
+                            </div>
+                            <div class="profilename">
+                                <h5>Jessica May</h5>
+                                <p>@jmay98</p>
+                            </div>
+                        </div>
+                        <div class="twittericon">
+                            <img src="images/twitter2.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <p>Absolutely love everything about Chirp, from the design to how everything works smoothly.</p>
+                    </div>
+                    <!-- Likes and date published -->
+                    <div class="subtext">
+                        <div class="likes">
+                            <img src="images/like.svg" alt="Heart">
+                            <p>221</p>
+                        </div>
+                        <span>August 7, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing section goes here -->
+    <section class="pricing">
+        <div class="txtwrap">
+            <h3>One simple price plan.</h3>
+            <p>Start growing your Twitter account by analyzing your follower's patterns.</p>
+        </div>
+        <div class="card_wrap">
+            <div class="price_card">
+                <div class="headprice">
+                    <h6>Monthly</h6>
+                    <div class="linewrap"><span>$9</span>
+                        <h6>/mo</h6>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check" style="color: #2ed8af;"></i> Unlimited* scheduled tweets
+                            and threads</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #2ed8af;"></i> Schedule up to 3 weeks in
+                            advance.</li>
+                        <li><i class="fa-solid fa-circle-check" style="color: #2ed8af;"></i> Real-time audience
+                            analytics tracking up to 5k followers.</li>
+                    </ul>
+                </div>
+                <div class="cardbtn">
+                    <div class="sign_in">
+                        <div class="iconnav"><img src="images/twitter.svg" alt="#"></div><span> Sign in with
+                            Twitter</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer in here -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="logo-footer">
+                <h1>Chirp.</h1>
+            </div>
+            <div class="copyright">
+                <div class="imgcopy">
+                    <a href="#"><img src="images/twitter1.svg" alt="Twitter Logo"></a>
+                </div>
+                <div class="text">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+/************** 
+ Global Styles 
+**************/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    color: #656565;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+.card1 h1,
+.card2 h2,
+.card3 h2,
+.card4 h2 {
+    font-size: 2.25em;
+}
+
+/* Sizing for article images */
+main img,
+section img {
+    width: 100%;
+}
+
+/* Sizing for avatar images */
+.avatar img {
+    width: 55px;
+}
+
+/* Sizing for webpage logo */
+header img,
+footer img {
+    width: 130px;
+}
+
+.masthead {
+    padding: 20px 30px;
+    display: flex;
+}
+
+.logowrap {
+    display: flex;
+    flex-grow: 1;
+}
+
+.logowrap img {
+    margin-top: 6px;
+    margin-left: -30px;
+    height: 30px;
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+
+#check {
+    display: none;
+}
+
+.navbar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+/* Hover and focus state */
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Styling the fourth a of navigation */
+nav>*:nth-of-type(4) {
+    background-color: #ee7c0d;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* Styling the article cards */
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: block;
+    padding: 20px 10px;
+}
+
+.card4 {
+    padding-bottom: 50px;
+}
+
+/* Styling the writer's profile */
+.writer {
+    display: flex;
+    padding-top: 16px;
+}
+
+.name {
+    padding-top: 10px;
+    padding-left: 5px;
+    ;
+    line-height: 20px;
+}
+
+/* Styling for footer */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px 0px;
+    background: rgb(221, 221, 221);
+}
+
+@media screen and (max-width:601px) {
+
+    /* Styling the hamburger and close icon */
+    .icon {
+        display: block;
+        padding-top: 4px;
+        margin-right: -15px;
+    }
+
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+
+    .icon #close {
+        display: none;
+    }
+
+    #check:checked~.icon #close {
+        display: block;
+    }
+
+    /* Styling the navigation bar on click */
+    .navbar {
+        position: absolute;
+        top: 8%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: white;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 12rem;
+    }
+}
+
+@media screen and (min-width:601px) {
+
+    /* Removing background color on header */
+    header {
+        background: none;
+    }
+
+    .logowrap {
+        margin: 9px -5px;
+    }
+
+    .navbar {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    /* Add spacing on navigation links */
+    .navbar a {
+        margin-left: 2.5em;
+    }
+
+    /* Footer styles */
+    footer {
+        background: none;
+        flex-flow: row wrap;
+        padding: 5px 10px 10px;
+    }
+
+    .logo-footer {
+        flex-grow: 1;
+    }
+
+    .textwrap p {
+        font-size: 1.25em;
+    }
+
+}
+
+/* tablet-specific styles here */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Cropping the image to 40% of height */
+    .mainimg {
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .card1 .mainimg img,
+    .card3 .mainimg img {
+        margin-top: -76px;
+    }
+
+}
+
+/* Desktop styles */
+@media screen and (min-width:1025px) {
+
+    /* Flex display on the main landing */
+    main {
+        display: flex;
+    }
+
+    /*************
+     Main article
+    *************/
+    .card1 {
+        display: flex;
+    }
+
+    .card1 .mainimg {
+        flex: 1 2 10000px;
+    }
+
+    .card1 h1 {
+        font-size: 3.375em;
+        line-height: 60px;
+        padding: 15px 0;
+    }
+
+    .card1 .maintxt {
+        padding: 0 10px;
+    }
+
+    /*******************
+      Sub-article cards
+    ********************/
+
+    h2 {
+        font-size: 2.25em;
+        line-height: 40px;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section .textwrap p {
+        padding-top: 20px;
+    }
+
+}

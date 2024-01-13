@@ -1,0 +1,105 @@
+/* Global style */
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree';
+}
+
+h1,
+h3,
+.profile p {
+    font-weight: 800;
+}
+
+.description a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.paragraph p {
+    color: hsl(0, 0%, 50%);
+    line-height: 1.3rem;
+}
+
+/* Adding background to word "Learning" */
+h3 {
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Adding line space in between h3, date, and article title */
+span {
+    line-height: 3rem;
+}
+
+/* Width and alignment for the image */
+.imgwrap img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Adding space between the image and card border */
+.imgwrap {
+    padding: 10px 10px 0px;
+}
+
+.description {
+    padding: 10px;
+}
+
+body { 
+/* Grid positioning courtesy of @Blackpachamame*/
+    padding: 10px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+}
+
+/* Alignment and style for the main card */
+main {
+    max-width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px black;
+}
+
+/* Alignmant for the profile wrap */
+.profile {
+    display: flex;
+    padding: 15px 0px 0px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px
+}
+
+.profile p {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Styling the hover state */
+.description a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+main:hover {
+    box-shadow: 20px 20px black;
+}

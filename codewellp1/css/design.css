@@ -1,0 +1,305 @@
+/**************
+Global Styles
+***************/
+
+body {
+    background-color: #0a0a0b;
+}
+
+/* Styling the website navigation */
+.logo-nav {
+    display: flex;
+    padding: 0px 10px;
+}
+
+.masthead {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 20px;
+}
+
+/*Default font style for container paragraphs*/
+.welcomecontainer p,
+.context p,
+.aboutpar p,
+.contact p {
+    font-family: 'Lato', sans-serif;
+    color: #8c8c8c;
+    font-size: 1em;
+}
+
+/* Font styles for headings */
+
+.welcomecontainer h1 {
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 3.100em;
+}
+
+.partners h2,
+.aboutcont h2,
+.contact h2 {
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 2.25em;
+    padding-bottom: 20px;
+}
+
+/* Styling website logo */
+.logo {
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    font-size: 2.25em;
+    float: left;
+    flex-grow: 2;
+    padding-top: 2px;
+}
+
+/* Hiding navigation by default */
+#nav-list {
+    display: none;
+}
+
+/* Styling the welcome text */
+.welcomecontainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+
+.welcomecontainer p {
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+/* Alignment setting for client logos */
+.clients {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+
+.clients img {
+    width: 111px;
+    height: 100px;
+}
+
+.clients ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Styling the cards for yelp and sense*/
+.partners {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+/*Alignment setting for the cards*/
+.spense,
+.yelp {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Alignment setting for the cards texts*/
+.context {
+    padding: 30px 0px;
+}
+
+.context p {
+    line-height: 20px;
+}
+
+/* Styling the co founder part */
+.aboutcont {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 10px 60px 10px;
+}
+
+.aboutpar p {
+    padding-top: 15px;
+    line-height: 30px;
+}
+
+/* Adding background color for about and footer */
+.aboutwrap,
+.footer-wrap {
+    background-color: #2e3038;
+}
+
+/* Contact part */
+.contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 10px 100px 10px;
+}
+
+/* Styling the "touch" button */
+.contact a {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.175em;
+    color: #2e3038;
+    text-decoration: none;
+    background-color: #fbe850;
+    padding: 15px 25px;
+}
+
+.contact p {
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+/* Styling the footer */
+.footcont {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 5vh;
+    padding: 10px 10px;
+}
+
+/* Font styling for footer logo */
+.footcont h2 {
+    font-size: 1.175em;
+    padding-top: 5px;
+}
+
+/* Spacing for the footer icons */
+.socmed img {
+    padding: 0px 5px;
+}
+
+/* Styling the navigation for smaller screens */
+@media screen and (max-width:750px) {
+    #nav-list a {
+        display: block;
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        color: #8c8c8c;
+        font-size: 1em;
+        box-sizing: border-box;
+        padding-top: 10px;
+    }
+    
+    #toggle{
+        display: none;
+    }
+
+     label {
+        display: block;
+        cursor:pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #8c8c8c;
+        font-size: 1.2em;
+        padding:10px;
+    }
+    
+    #nav-list {
+        display: none;
+    }
+    
+    #navwrap input:checked~#nav-list {
+        display: block;
+        transition: ease .2s;
+    }
+}
+
+@media screen and (min-width:750px) {
+
+    /* Hidden hamburger icon */
+    /* Default navigation on bigger screens */
+    #hamnav label,
+    #hamburger {
+        display: none;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    #navwrap {
+        width: 50%;
+        background: none;
+    }
+
+    /* Menu Items */
+    #nav-list {
+        display: flex;
+        justify-content: end;
+    }
+
+    #nav-list a {
+        font-family: 'Lato', sans-serif;
+        padding: 0px 10px;
+        text-decoration: none;
+        color: #8c8c8c;
+        font-size: 1em;
+    }
+
+    #nav-list a:hover {
+        text-decoration: underline;
+    }
+
+    /* Adjusting logo sizes */
+    .clients img {
+        width: 100px;
+        height: 50px;
+    }
+
+    /* Styling the partner on grid layout */
+    .partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 30px;
+    }
+
+    .yelp {
+        grid-row: 1/2;
+        grid-column: 1/1;
+    }
+
+    /* Styling the about part in columns */
+    .aboutcont {
+        display: flex;
+    }
+
+    .firstcol,
+    .secondcol {
+        width: 50%;
+        text-align: justify;
+    }
+
+    .firstcol {
+        padding-right: 20px;
+    }
+
+    .secondcol {
+        padding-left: 20px;
+        margin-top: 8px;
+    }
+
+    /* Setting the contact page half width of the page */
+    .contact {
+        max-width: 38%;
+        margin: 0 255px;
+        padding: 40px 0px 70px 0px;
+    }
+
+    .contact p {
+        padding-bottom: 35px;
+    }
+
+}
