@@ -55,6 +55,7 @@ header {
 .logowrap {
     display: flex;
     flex-grow: 1;
+    padding-top:0.5rem;
 }
 
 .icon {
@@ -64,12 +65,12 @@ header {
     right: 0;
 }
 
-#check {
+#check{
     display: none;
 }
 
 .navbar a {
-    display: block;
+    justify-content: space-around;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -87,40 +88,7 @@ nav>*:nth-of-type(5) {
     color: white;
     background-color: black;
     font-weight: 600;
-}
-
-/* Styling the hamburger and close icon */
-.icon {
-    display: block;
-    padding-top: 4px;
-}
-
-#check:checked~.icon #menu-icon {
-    display: none;
-}
-
-.icon #close {
-    display: none;
-}
-
-#check:checked~.icon #close {
-    display: block;
-}
-
-/* Styling the navigation bar on click */
-.navbar {
-    position: absolute;
-    top: 23%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: #f0eeeb;
-    transition: .3s ease;
-    overflow: hidden;
-}
-
-#check:checked~.navbar {
-    height: 12rem;
+    border-radius: 10px;
 }
 
 /* Styling the banner */
@@ -163,7 +131,7 @@ nav>*:nth-of-type(5) {
     padding: 1rem 0;
 }
 
-.txtwrap em{
+em{
     font-style: italic;
 }
 
@@ -218,7 +186,8 @@ input {
 }
 
 .logos img {
-    height: 30px;
+    height: 1.5rem;
+    padding: 1rem;
 }
 
 /* Styling the escrow portion */
@@ -272,6 +241,8 @@ Text editor section
     padding:1rem;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .editorwrap h2{
@@ -320,11 +291,16 @@ footer{
 .copyright h1{
     color: whitesmoke;
 }
+
 /* Styling the footer paragraph */
 .copyright p,
 .row1 a,
 .row2 a {
     color: #87857f;
+}
+
+.copyright p{
+    line-height: 1.5rem;
 }
 
 /* Styling the footer anchor tags */
@@ -368,3 +344,209 @@ footer{
     justify-content:space-evenly;
 }
 
+/* Styling navigation for mobile */
+@media screen and (max-width:601px){
+    #check {
+        display: none;
+    }
+    
+    .navbar a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    
+    /* Styling the fifth a of navigation */
+    nav>*:nth-of-type(5) {
+        color: white;
+        background-color: black;
+        font-weight: 600;
+        border-radius: 0px;
+    }
+    
+    /* Styling the hamburger and close icon */
+    .icon {
+        display: block;
+        padding-top: 4px;
+    }
+    
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+    
+    .icon #close {
+        display: none;
+    }
+    
+    #check:checked~.icon #close {
+        display: block;
+    }
+    
+    /* Styling the navigation bar on click */
+    .navbar {
+        position: absolute;
+        top: 23%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #f0eeeb;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    
+    #check:checked~.navbar {
+        height: 12rem;
+    }
+}
+
+@media screen and (min-width:690px) and (max-width:1024px) {
+    .icon{
+        display: none;
+    }
+    
+    .navbar {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    /* Add spacing on navigation links */
+    .navbar a {
+        margin-left: 2.5em;
+    }
+
+    .row1,
+    .row2{
+        width:48%;
+    }
+
+    .logos img {
+        height: 1.7rem;
+        padding: 1.5rem;
+    }
+
+    /* Hiding the hero mobile version */
+    .hero_mobile{
+        display: none;
+    }
+
+    .hero_tablet{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .icon{
+        display: none;
+    }
+    
+    .navbar {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    /* Add spacing on navigation links */
+    .navbar a {
+        margin-left: 2.5em;
+    }
+
+    nav>*:nth-of-type(3) {
+        margin-right:14rem;
+    }
+
+    .row1,
+    .row2{
+        width:30%;
+    }
+
+    /* Banner styles for desktop */
+    .welcome_banner{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome_banner .imgwrap{
+        width:37%;
+    }
+
+    .welcome_banner .txtwrap{
+        width:45%;
+    }
+
+    .welcome_banner .txtwrap h2{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    /* Enables desktop version for hero image */
+    .hero_mobile{
+        display: none;
+    }
+
+    .hero_desktop{
+        display: flex;
+    }
+
+    /* Escrow wrap */
+    .escrow_wrap{
+        flex-direction: row;
+    }
+
+    .escrowtxt{
+        width:60%;
+        padding:5rem 0rem 0 2rem;
+        margin-left: 3rem;
+    }
+
+    /* Enables desktop version for mockup image */
+    .mockup_mobile{
+        display: none;
+    }
+
+    .mockup_tablet{
+        display: flex;
+    }
+
+    .escrow_img {
+        justify-content: end;
+        display: flex;
+        width:50%;
+    }
+
+    /* Text editor section */
+    .txteditor{
+        flex-direction: row-reverse;
+        padding:2rem 0;
+    }
+
+    .txteditor img{
+        width:50%;
+        height:20%;
+    }
+
+    /* Adjusts margin-top alignment for text-wrap */
+    .editorwrap{
+        margin-top: 4rem;
+    }
+
+    /* Footer styles */
+    footer{
+        margin-top:-3rem;
+    }
+
+    .copyright h1{
+        padding-bottom:1rem;
+    }
+
+    .footwrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .copyright{
+        width: 30%;
+        margin-top:-1rem;
+    }
+}
