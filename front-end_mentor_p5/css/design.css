@@ -47,6 +47,12 @@ header {
     font-weight: 700;
     text-decoration: none;
     color: hsl(192, 100%, 9%);
+    transition: all 0.2s ease-out;
+}
+
+/* Hover state */
+.btn1 a:hover{
+    color:rgb(100, 100, 100);
 }
 
 /* Applying flexible wrap to the logo header */
@@ -100,6 +106,7 @@ header {
     text-align: center;
     padding: 1rem;
     margin-top: -5px;
+    transition: all 0.2s ease-out;
 }
 
 .btn a {
@@ -108,6 +115,11 @@ header {
     text-decoration: none;
     color: white;
     text-align: center;
+}
+
+/* Hover state */
+.btn:hover{
+    background-color:hsl(322, 100%, 79%);
 }
 
 .txtbanner .btn {
@@ -242,6 +254,13 @@ footer a {
 .column2 a {
     font-size: 1.2rem;
     line-height: 2rem;
+    transition: all 0.2s ease-out;
+}
+
+.column1 a:hover,
+.column2 a:hover{
+    color:hsl(322, 94%, 65%);
+    text-decoration:underline;
 }
 
 /* Social icons in footer */
@@ -262,6 +281,13 @@ footer a {
     border: 2px solid white;
     padding: 10px;
     border-radius: 50%;
+    transition: all 0.2s ease-out;
+}
+
+/* Hover state */
+.socials a:hover{
+   color:hsl(322, 94%, 65%);
+   border-color:hsl(322, 94%, 65%);
 }
 
 .copywrap {
