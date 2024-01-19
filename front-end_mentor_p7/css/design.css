@@ -1,5 +1,5 @@
 /* Global styles */
-nav a,
+.nav a,
 p,
 .prodcta a,
 input,
@@ -18,7 +18,7 @@ h3{
 /*********
   HEADER
 *********/
-.masthead{
+.headwrap{
     display: flex;
     padding:1rem;
     max-width: 1200px;
@@ -27,19 +27,18 @@ h3{
 
 .logo{
     flex-grow: 1;
-    max-width:10%;
 }
 
 .logo img{
-    width:100%;
+    width:150px;
 }
 
-.masthead nav{
-    margin-top:0.5rem;
-    padding-left:50rem;
+.nav{
+    margin-top:0.8rem;
+    width:25%;
 }
 
-nav a{
+.nav a{
     padding:0 1rem;
     color: hsl(243, 87%, 12%);
 }
