@@ -1,0 +1,58 @@
+/* Global styles */
+nav a,
+p,
+.prodcta a,
+input,
+footer ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/*********
+  HEADER
+*********/
+.masthead{
+    display: flex;
+    padding:1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    flex-grow: 1;
+    max-width:10%;
+}
+
+.logo img{
+    width:100%;
+}
+
+.masthead nav{
+    margin-top:0.5rem;
+    padding-left:50rem;
+}
+
+nav a{
+    padding:0 1rem;
+    color: hsl(243, 87%, 12%);
+}
+
+/* Styling the banner */
+.banner{
+    display:flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imgbanner img{
+    width: 100%;
+    padding: 1rem;
+}
