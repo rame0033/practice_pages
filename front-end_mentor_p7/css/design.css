@@ -261,6 +261,12 @@ footer{
     line-height: 2rem;
 }
 
+/* Adjusting icon size */
+.contact .bx{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
 .contact img{
     filter: invert(100%) brightness(70);
     width:150px;
@@ -294,6 +300,24 @@ footer{
     padding: 1rem;
 }
 
+/* Hover state */
+.bannerbtn:hover,
+.ctabtn:hover {
+    cursor: pointer;
+    background-color: hsl(224, 88%, 77%);
+}
+
+.socials a:hover{
+    cursor: pointer;
+    color: hsl(224, 88%, 77%);
+    border-color: hsl(224, 88%, 77%);;
+}
+
+.firstcol a:hover,
+.secondcol a:hover{
+    cursor: pointer;
+color: hsl(224, 88%, 77%);
+}
 /* Adding desktop styles */
 @media screen and (min-width:900px) {
     /* Header */
