@@ -3,14 +3,14 @@
 p,
 .prodcta a,
 input,
-footer ul li a{
+footer ul li a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
 h1,
 h2,
-h3{
+h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
@@ -18,40 +18,401 @@ h3{
 /*********
   HEADER
 *********/
-.headwrap{
+.headwrap {
     display: flex;
-    padding:1rem;
+    padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     flex-grow: 1;
 }
 
-.logo img{
-    width:150px;
+.logo img {
+    width: 150px;
 }
 
-.nav{
-    margin-top:0.8rem;
-    width:25%;
+.nav {
+    display: flex;
+    margin-top: 0.8rem;
 }
 
-.nav a{
-    padding:0 1rem;
+.nav a {
+    padding: 0 0.2rem;
     color: hsl(243, 87%, 12%);
 }
 
 /* Styling the banner */
-.banner{
-    display:flex;
+.banner {
+    display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+}
+
+.imgbanner {
+    padding: 1rem 2rem 4rem;
+}
+
+.imgbanner img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Styling the banner text wra[ */
+.txtwrap {
+    width: 100%;
+}
+
+.txtwrap h1 {
+    font-size: 2.25em;
+    padding: 2rem 1rem 0.5rem;
+    text-align: center;
+}
+
+.txtwrap p {
+    text-align: center;
+    line-height: 1.3rem;
+    padding: 1rem;
+}
+
+/* Styling the form */
+.txtwrap form {
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.bannerinp {
+    width: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.bannerbtn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+    margin-top: 1rem;
+}
+
+/* 'Productive' section */
+.productive {
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 5rem;
+}
+
+.prodtwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Setting the width of image */
+.prodimg {
+    padding: 1rem;
+}
+
+.prodimg img {
+    width: 100%;
+}
+
+/* Setting the text alignment */
+.prodtxt {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.imgbanner img{
-    width: 100%;
+.prodtxt h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.prodtxt p {
+    line-height: 1.4rem;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Styling the productive cta */
+.prodcta{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding:1rem 0rem 3rem;
+
+    
+}
+
+/* Styling the cta text */
+.prodcta a{
+    color:#3ea28c;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styling the testimonial card */
+.prodcard{
+    max-width: 350px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 4px 5px 42px hsl(0, 0%, 81%);
     padding: 1rem;
+}
+
+.quote {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0rem;
+}
+
+.testi{
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.profile{
+    display: flex;
+    padding: 1rem;
+}
+
+.profilepic img{
+    width:45px;
+    border-radius: 50%;
+}
+
+.name{
+    padding:0.5rem;
+}
+
+/* Styling the 'access' cta */
+.cta{
+    padding:3rem;
+    color: white;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.ctatxt h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.ctatxt p{
+    text-align: center;
+    padding: 1rem 0rem;
+    line-height: 1.5rem;
+}
+
+/* Styling the cta form */
+.ctaform{
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 0rem 1rem 1rem;
+}
+
+.ctainp{
+    width: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.ctabtn{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+    margin-top: 1rem;
+}
+
+/* Styling the footer */
+footer{
+    padding:1.5rem;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-wrap a{
+    color: white;
+}
+
+.contact{
+    line-height: 2rem;
+}
+
+.contact img{
+    filter: invert(100%) brightness(70);
+    width:150px;
+}
+
+.firstcol li,
+.secondcol li{
+    padding:0.5rem 0rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.socials a{
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.attribution{
+    text-align: center;
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+    padding: 1rem;
+}
+
+/* Adding desktop styles */
+@media screen and (min-width:900px) {
+    /* Header */
+    
+    .headwrap{
+        margin-top: 1.5rem;
+    }
+    
+    .nav a{
+        padding:0rem 1rem;
+    }
+
+    /* BANNER */
+    .banner{
+        flex-direction: row-reverse;
+        padding: 2rem 2rem 10rem;
+        justify-content: center;
+        background-image: url(../images/bg-curve-desktop.svg);
+    }
+
+    /* Setting flex direction of banner to row */
+    .imgbanner{
+        max-width:600px;
+    }
+
+    .txtwrap{
+        max-width: 600px;
+        margin-top: 5rem;
+    }
+
+    .txtwrap h1,
+    .txtwrap p{
+        text-align: left;
+    }
+
+    .txtwrap form{
+        flex-direction: row;
+    }
+
+    .bannerinp{
+        width: 60%;
+    }
+
+    .bannerbtn{
+        margin-left: 1rem;
+        width: 35%;
+    }
+
+    /* Styling the 'productive' wrap */
+    .productive {
+        display: flex;
+    }
+
+    .prodtxt h2{
+        font-size: 2.2rem;
+        text-align: right;
+        padding: 1rem 0;
+    }
+
+    .prodtxt p{
+        text-align: right;
+    }
+
+    .prodtwrap{
+        display: flex;
+        align-items: flex-end;
+        padding:0rem 2rem;
+        margin-right: 2rem;
+        max-width: 600px;
+    }
+
+    .prodcta{
+        justify-content: end;
+    }
+
+    .prodimg{
+        margin-left: 1rem;
+        max-width:600px;
+        margin-top:2rem;
+    }
+
+    /* ACCESS CTA SECTION */
+    .cta{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ctatxt{
+        width:40%;
+        padding: 1.5rem;
+    }
+
+    .ctatxt h2{
+        font-size: 2.25em;
+    }
+
+    .ctatxt h2,
+    .ctatxt p{
+        text-align: left;
+    }
+
+    .ctaform{
+        width: 40%;
+        margin-top: 0.4rem;
+    }
+
+    .ctabtn{
+        width: 50%;
+    }
+
+    /* Footer desktop styles */
+    .footermain{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding:6rem 0;
+    }
+
+    .socials{
+        height:10%;
+    }
 }
