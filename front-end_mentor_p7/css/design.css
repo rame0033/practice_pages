@@ -345,6 +345,7 @@ footer{
     /* Styling the 'productive' wrap */
     .productive {
         display: flex;
+        justify-content: center;
     }
 
     .prodtxt h2{
@@ -355,6 +356,7 @@ footer{
 
     .prodtxt p{
         text-align: right;
+        padding-right: 0;
     }
 
     .prodtwrap{
