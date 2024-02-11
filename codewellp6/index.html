@@ -48,11 +48,16 @@
 
         <div class="welcome_banner">
             <!-- Banner image -->
-            <div class="imgwrap">
-                <img src="images/hero_mobile.png" class="hero_mobile" alt="Woman seeing her earnings from spense">
-                <img src="images/hero_tablet.png" class="hero_tablet" alt="Woman seeing her earnings from spense">
-                <img src="images/hero_desktop.png" class="hero_desktop" alt="Woman seeing her earnings from spense">
-            </div>
+            <picture class="imgwrap">
+                <source srcset="images/hero_mobile.png" media="(max-width:659px)" />
+
+                <source srcset="images/hero_tablet.png" media="(max-width:1023px)" />
+
+                <source srcset="images/hero_desktop.png" media="(min-width:1024px)" />
+
+                <img class="default_img" src="images/hero_tablet.png" alt="Woman seeing her earnings from spense">
+            </picture>
+
 
             <!-- Banner text -->
             <div class="txtwrap">
@@ -94,12 +99,14 @@
                     your payments, so you never need to worry about scams.</p>
                 <a href="#">Learn more about Escrow <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="escrow_img">
-                <img src="images/mockup_mobile.png" class="mockup_mobile"
+            <picture class="escrow_img">
+                <source srcset="images/mockup_mobile.png" media="(max-width:1023px)" />
+
+                <source srcset="images/mockup_tablet.png" media="(min-width:1024px)" />
+
+                <img class="default_mockup" src="images/mockup_mobile.png"
                     alt="Never buy or sell online without using Escrow.com">
-                <img src="images/mockup_tablet.png" class="mockup_tablet"
-                    alt="Never buy or sell online without using Escrow.com">
-            </div>
+            </picture>
         </div>
 
         <div class="txteditor">
@@ -121,7 +128,7 @@
                 <p>Spense Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the
                     topics you love, and get paid for doing <em>just</em> that.</p>
             </div>
-            
+
             <div class="row1">
                 <div class="column1">
                     <h3>Sitemap</h3>
