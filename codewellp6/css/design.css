@@ -387,7 +387,7 @@ footer{
     /* Styling the navigation bar on click */
     .navbar {
         position: absolute;
-        top: 23%;
+        top: 12em;
         left: 0;
         width: 100%;
         height: 0;
