@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codewell Practice p1</title>
+
+    <!-- Flowbite framework -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
     <!-- Stylesheets here -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/design.css">
+    
     <!-- Font goes here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +23,42 @@
 
 <body>
     <!-- Header navigation and welcome text here -->
+
+
+    
+    
     <header class="masthead">
-        <div class="logo-nav">
-            <div class="logo">
-                <h1>Johnathan Specter</h1>
+   
+        <nav class="bg-dark border-gray-200 dark:bg-gray-900">
+            <div class="bg-dark max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <span class="self-center text-2xl font-medium text-white dark:text-white">Johnathan Specter</span>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Articles</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Chats</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Awards</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- Navigation -->
-            <nav id="navwrap">
-                <!-- Hamburger icon -->
-                <label for ="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle"/>
-                <!-- Menu list -->
-                <div id="nav-list">
-                    <a href="#"> Articles</a>
-                    <a href="#">Chats</a>
-                    <a href="#">Awards</a>
-                    <a href="#">About</a>
-                </div>
-            </nav>
-        </div>
+          </nav>
+        
         <!-- Welcome text goes here -->
         <div class="welcomecontainer">
             <h1>
@@ -162,5 +184,8 @@
         </div>
     </footer>
 </body>
+
+<!-- Flowbite JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </html>
