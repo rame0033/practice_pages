@@ -293,14 +293,17 @@ body {
 
     .maincontact{
         display: flex;
-        max-width: 1200px;
+        align-items: flex-start;
+        max-width: 1010px;
+        margin: 0 auto;
     }
 
     /* Setting the contact page half width of the page */
     .contact {
-        max-width: 55%;
-        padding: 40px 0px 70px 0px;
-        align-self: flex-start;
+        max-width: 60%;
+        margin-left: 0;
+        padding: 40px 0px 70px 5px;
+        
     }
 
     .contact p {
