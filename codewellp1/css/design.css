@@ -159,18 +159,24 @@ body {
 }
 
 /* Styling the footer */
+.footer-wrap{
+    padding: 0.5rem;
+}
+
 .footcont {
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
-    height: 5vh;
     padding: 10px 10px;
 }
 
 /* Font styling for footer logo */
 .footcont h2 {
     font-size: 1.175em;
-    padding-top: 5px;
+}
+
+.socmed {
+    display: flex;
 }
 
 /* Spacing for the footer icons */
