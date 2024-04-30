@@ -194,7 +194,7 @@ nav li a{
 
     
 /* Adding hover for larger screen */
-    #nav-list a:hover {
+    nav li a:hover {
         text-decoration: underline;
     }
 
