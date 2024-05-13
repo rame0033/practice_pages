@@ -290,10 +290,7 @@ footer a {
 .copywrap {
     text-align: center;
     padding-bottom: 2rem;
-}
-
-.copywrap p {
-    line-height: 2rem;
+    font-size: 0.7em;
 }
 
 @media screen and (min-width:1000px) {
@@ -377,8 +374,9 @@ footer a {
 
     .copywrap{
         text-align: right;
-        font-size: 0.7em;
-        padding-right: 10%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding:1rem;
     }
     
     .copywrap p {
