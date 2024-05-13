@@ -502,7 +502,7 @@ footer {
 
     /* Styling the header */
      .masthead{
-        padding:45px 0px;
+        padding:45px 10px;
     }
 
     .navbar {
@@ -536,14 +536,14 @@ footer {
     .banner-container {
         display: flex;
         flex-direction: row-reverse;
-        padding-bottom:80px;
+        padding:10px 10px 65px 10px;
+        align-items: center;
     }
 
     /* Setting the position of banner text */
     .bannertxt{
         width:60%;
         padding-right: 132px;
-        margin-top: 85px;
     }
     
     .bannercopy h2{
