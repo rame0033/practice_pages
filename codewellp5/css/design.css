@@ -145,7 +145,7 @@ nav>*:nth-of-type(4) {
 
 /* Styling the avatars to slightly stack each other */
 .avatars img {
-    margin-left: -17px;
+    margin-left: -1.15rem;
 }
 
 /* Styling the last paragraph of the banner */
