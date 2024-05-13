@@ -22,7 +22,7 @@ header {
     background-image: url(../images/bg-hero-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    /* height: 80vh; */
 }
 
 .masthead {
@@ -137,10 +137,9 @@ header {
 }
 
 main {
-    display: grid;
     padding: 2rem 1rem;
     max-width: 1200px;
-    margin: 100px auto 200px;
+    margin:1rem auto 15rem;
 }
 
 /* Setting width for the card image */
@@ -304,10 +303,6 @@ footer a {
     .header {
         background-image: url(../images/bg-hero-desktop.svg);
         background-size: cover;
-    }
-
-    .masthead {
-        height: 85vh;
     }
 
     .banner {
