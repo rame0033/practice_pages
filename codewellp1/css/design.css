@@ -25,7 +25,7 @@ nav li a{
 /*Default font style for container paragraphs*/
 .welcomecontainer p,
 .context p,
-.aboutpar p,
+.aboutcont p,
 .contact p {
     font-family: 'Lato', sans-serif;
     color: #8c8c8c;
@@ -219,14 +219,12 @@ nav li a{
 
     /* Styling the about part in columns */
     .aboutcont {
-        display: flex;
+        columns: 2;
     }
 
-    .firstcol,
-    .secondcol {
-        width: 50%;
-        text-align: justify;
-    }
+    .aboutcont p {
+        line-height: 2rem;
+    } 
 
     .firstcol {
         padding-right: 20px;
