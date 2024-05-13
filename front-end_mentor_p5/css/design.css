@@ -323,6 +323,7 @@ footer a {
     .card1,
     .card3 {
         flex-direction: row;
+        align-items: center;
     }
 
     .cardtxt h2 {
@@ -333,17 +334,16 @@ footer a {
     .card3 .cardtxt {
         text-align: right;
         line-height: 4.5rem;
-        margin-top: 4rem;
     }
 
     .card2 {
         flex-direction: row-reverse;
+        align-items: center;
     }
 
     .card2 .cardtxt {
         text-align: left;
         line-height: 4.5rem;
-        margin-top: 4rem;
     }
 
     .footer{
