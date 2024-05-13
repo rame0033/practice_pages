@@ -381,7 +381,7 @@ footer {
 
 .copyright {
     display: flex;
-
+    gap:1rem;
 }
 
 .copyright a {
@@ -605,8 +605,8 @@ footer {
         margin-top:5px;
     }
 
-    /* Spacing for copyright anchor tags */
+    /* Spacing for copyright anchor tags
     .copyright a{
-        margin-left: 20px;
-    }
+        margin-left: 20px; 
+    }*/
 }
