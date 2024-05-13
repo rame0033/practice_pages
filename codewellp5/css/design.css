@@ -175,17 +175,18 @@ nav>*:nth-of-type(4) {
 }
 
 .features h4 {
-    padding: 5px 0px;
+    font-size:1.15rem;
+    padding: 1rem 0;
 }
 
 .features p {
-    font-size: 0.8em;
+    font-size: 1.25rem;
     color: #737373;
-    line-height: 20px;
+    line-height: 1.5rem;
 }
 
 .features img {
-    width: 30px;
+    width: 45px;
 }
 
 /* Adding border to the cards */
