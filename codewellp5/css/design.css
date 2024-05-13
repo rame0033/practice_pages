@@ -508,6 +508,7 @@ footer {
     .navbar {
         display: flex;
         align-items: center;
+        gap:1rem;
     }
 
     nav>*:nth-of-type(4) {
@@ -518,8 +519,6 @@ footer {
         display: flex;
         justify-content: center;
         border-radius: 5px;
-        margin-top: -8px;
-        margin-left: 10px;
     }
 
     .buttons {
