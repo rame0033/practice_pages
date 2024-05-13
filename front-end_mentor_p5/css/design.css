@@ -22,7 +22,6 @@ header {
     background-image: url(../images/bg-hero-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 80vh; */
 }
 
 .masthead {
@@ -39,7 +38,6 @@ header {
     background-color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: -5px;
 }
 
 .btn1 a {
@@ -58,6 +56,7 @@ header {
 /* Applying flexible wrap to the logo header */
 .headerwrap {
     display: flex;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.9rem 0;
@@ -69,7 +68,6 @@ header {
 
 .logo-wrap img {
     width: 150px;
-    margin-top: 1rem;
 }
 
 /* Styling the main banner */
