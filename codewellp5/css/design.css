@@ -205,6 +205,8 @@ nav>*:nth-of-type(4) {
 .testimonials h3 {
     font-size: 2em;
     padding: 30px 10px;
+    max-width: 1200px;
+    margin:0 auto;
 }
 
 /* Setting the wrap for the three cards */
@@ -477,12 +479,12 @@ footer {
     }
 
     .testimonials h3 {
-        padding: 50px;
+        padding: 2rem;
     }
 }
 
 /* Styling for testimonials - larger screens */
-@media screen and (min-width:760px) {
+@media screen and (min-width:706px) {
     .custom-wrap{
         max-width: 1100px;
         margin:0 auto;
@@ -586,12 +588,6 @@ footer {
     .testimonials{
         padding-bottom: 50px;
     }
-
-    .testimonials h3{
-        padding-left:160px;
-        padding-top:50px;
-    }
-
 
 /* Footer section */
     .footer-wrap{
