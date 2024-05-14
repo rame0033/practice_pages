@@ -1,0 +1,160 @@
+/* GOOGLE FONT - RALEWAY */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ROOT */
+:root{
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --PaleBlue: hsl(243, 100%, 93%);
+}
+
+/* Set components to center of the page */
+body{
+    font-family:'Raleway', sans-serif;
+    color:var(--PaleBlue);
+    display:grid;
+    min-height: 100vh;
+    place-items:center;
+    background: var(--VeryDarkBlue) url('../assets/bg-mobile.png') no-repeat center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+}
+
+/* LOGO PANEL */
+.panel{
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+    width:14rem;
+    padding:2rem;
+    background-color:var(--DarkBlue);
+    border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.icon_button{
+    display:flex;
+    gap:1.25rem;
+}
+
+/* Styling the button panel */
+.icon_button button{
+    width:3rem;
+    height:3rem;
+    background-color:var(--VeryDarkBlue);
+    border:0;
+    border-radius:0.5rem;
+}
+
+button img{
+    height:1.5rem;
+}
+
+/* PROGRESS PANEL */
+.progress{
+    background-color: var(--DarkBlue);
+    padding:1rem;
+    border-radius:0.5rem;
+    font-size: 0.75rem;
+}
+
+.quote{
+    text-align: center;
+    padding:1rem 0 0.5rem;
+}
+
+.quota{
+    font-weight: 700;
+}
+
+/* Styling the quota box */
+.rem {
+    color:var(--GrayishBlue);
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #FFFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:7rem;
+    padding:0.8rem;
+    position:absolute;
+    margin-left:4rem;
+    margin-top:3rem;
+    border-radius:0.5rem;
+}
+
+/* Styling for span inside "rem" class */
+.remain{
+    font-size: 2rem;
+    color:var(--VeryDarkBlue);
+    padding-right:0.5rem;
+}
+
+/* PROGRESS BAR */
+.progress_bar{
+    position:relative;
+    width: 90%;
+    margin: 0 auto;
+    background-color:var(--VeryDarkBlue);
+    height:1rem;
+    border-radius:0.5rem;
+    padding:0.05rem;
+}
+
+/* Style the progress bar fill */
+.progress_bar span{
+    display: flex;
+    background: linear-gradient(76deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+    height:inherit;
+    width:80%;
+    border-radius:0.5rem;
+}
+
+/* Add the indicator to progress bar fill */
+.progress_bar span::after{
+    content:'';
+    background-color:var(--GrayishBlue);
+    height:inherit;
+    width:1rem;
+    margin-left: 10.49rem;
+    position:absolute;
+    border-radius: 50%;
+}
+
+/* Style the text below progress bar */
+.limit{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin: 0 auto;
+    padding:0.5rem 0 2rem;
+    font-weight: 700;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.75rem;
+    color:#FFFAFA;
+    padding:1rem;
+    line-height: 1.25rem;
+}
+
+footer a{
+    text-decoration: none;
+    color:#FFFAFA;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px){
+    body{
+        background: var(--VeryDarkBlue) url('../assets/bg-desktop.png') no-repeat center;
+        background-position:0 100%;
+        background-size: contain;
+    }
+}
