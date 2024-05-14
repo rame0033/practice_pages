@@ -52,15 +52,15 @@ I included the code snippet of the value for the `span::after`.
 
 `
 
-/* Add the indicator to progress bar fill */
-.progress_bar span::after{
-    content:'';
-    background-color:var(--PaleBlue);
-    height:inherit;
-    width:1rem;
-    right: 20%;
-    position:absolute;
-    border-radius: 50%;
+        /* Add the indicator to progress bar fill */
+        .progress_bar span::after{
+            content:'';
+            background-color:var(--PaleBlue);
+            height:inherit;
+            width:1rem;
+            right: 20%;
+            position:absolute;
+            border-radius: 50%;
 }
 
 `
