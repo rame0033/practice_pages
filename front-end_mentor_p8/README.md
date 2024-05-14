@@ -47,10 +47,10 @@ To see how you can add code snippets, see below:
 
 To be able to do the circle indicator inside the progress bar, I used the pseudo-code `::after`.
 
-I included the code snippet of the value for the 'span::after'
+I included the code snippet of the value for the `span::after`
 
-`
-/* Add the indicator to progress bar fill */
+
+`/* Add the indicator to progress bar fill */
 .progress_bar span::after{
     content:'';
     background-color:var(--PaleBlue);
@@ -59,8 +59,7 @@ I included the code snippet of the value for the 'span::after'
     right: 20%;
     position:absolute;
     border-radius: 50%;
-}
-`
+}`
 
 ### Continued development
 
