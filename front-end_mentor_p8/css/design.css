@@ -84,8 +84,7 @@ button img{
     width:7rem;
     padding:0.8rem;
     position:absolute;
-    margin-left:4rem;
-    margin-top:3rem;
+    margin: 3rem 0 0 3.7rem;
     border-radius:0.5rem;
 }
 
@@ -122,7 +121,7 @@ button img{
     background-color:var(--GrayishBlue);
     height:inherit;
     width:1rem;
-    margin-left: 10.49rem;
+    right: 20%;
     position:absolute;
     border-radius: 50%;
 }
@@ -154,7 +153,49 @@ footer a{
 @media screen and (min-width: 900px){
     body{
         background: var(--VeryDarkBlue) url('../assets/bg-desktop.png') no-repeat center;
-        background-position:0 100%;
+        background-position:0 150%;
         background-size: contain;
+    }
+
+    .container{
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2rem;
+        width:70vw;
+        position:relative;
+        top:35%;
+    }
+
+    /* Set the width for the progress bar panel */
+    .progress{
+        flex-grow:2;
+        height:70%;
+        padding-bottom: 0;
+    }
+
+    /* Position left for quote above progress bar */
+    .quote{
+        text-align: left;
+        width:90%;
+        margin:0 auto;
+    }
+
+    /* Set position for quota box */
+    .rem{
+        top:-3rem;
+        right:3rem;
+        padding:1rem;
+    }
+
+    /* Adding a pointed corner to the quota box */
+    .rem:after{
+        content:'';
+        position:absolute;
+        width:2rem;
+        height:2rem;
+        background: #FFFAFA;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+        top:80%;
+        right:0%;
     }
 }
