@@ -35,22 +35,19 @@ I learned how to do the progress bar by using div, and span to put the fill in t
 To see how you can add code snippets, see below:
 
 ### HTML
-`
-<!-- Progress bar -->
+      <!-- Progress bar -->
       <div class="progress_bar">
 
         <!-- Bar Fill -->
         <span class="fill"></span>
       </div>
 
-`
-
 ### CSS
 To be able to do the circle indicator inside the progress bar, I used the pseudo-code `::after`.
 
 I included the code snippet of the value for the `span::after`.
 
-`
+
 
         /* Add the indicator to progress bar fill */
         .progress_bar span::after{
@@ -63,7 +60,7 @@ I included the code snippet of the value for the `span::after`.
             border-radius: 50%;
 }
 
-`
+
 
 ### Continued development
 
