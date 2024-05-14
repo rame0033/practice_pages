@@ -58,7 +58,7 @@ I included the code snippet of the value for the `span::after`.
             right: 20%;
             position:absolute;
             border-radius: 50%;
-}
+          }
 
 
 
