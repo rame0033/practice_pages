@@ -205,4 +205,10 @@ footer a{
         top:80%;
         right:0%;
     }
+
+    /* Adjust position of footer */
+    footer{
+        position: relative;
+        bottom: -6rem;
+    }
 }
