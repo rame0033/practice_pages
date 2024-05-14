@@ -15,7 +15,6 @@ body{
     color:var(--PaleBlue);
     display:grid;
     min-height: 100vh;
-    padding:1rem;
     place-items:center;
     background: var(--VeryDarkBlue) url('../assets/bg-mobile.png') no-repeat center;
     background-size: cover;
@@ -25,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     grid-gap: 2rem;
+    padding:1rem;
 }
 
 /* LOGO PANEL */
