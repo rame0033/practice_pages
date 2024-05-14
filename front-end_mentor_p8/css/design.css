@@ -23,6 +23,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    margin-top:6rem;
     grid-gap: 2rem;
     padding:1rem;
 }
@@ -163,6 +164,7 @@ footer a{
         align-items: flex-end;
         gap: 2rem;
         width:70vw;
+        margin-top:0;
         position:relative;
         top:35%;
     }
