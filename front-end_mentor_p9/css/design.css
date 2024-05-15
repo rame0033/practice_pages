@@ -248,7 +248,7 @@ main{
     content:'';
     position: absolute;
     width: 60vw;
-    height: 50vh;
+    height: 85vh;
     right:0;
     bottom:-30rem;
     background: var(--light-grayish-violet);
