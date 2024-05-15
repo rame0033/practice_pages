@@ -42,6 +42,7 @@ p, span{
 main{
     display: flex;
     flex-direction: column;
+    min-height:100dvh;
 }
 
 .container{
@@ -217,7 +218,7 @@ main{
 .container::before{
     content:'';
     position: absolute;
-    width: 60vw;
+    width: 48vw;
     height: 85vh;
     left:0;
     top:0;
@@ -235,7 +236,7 @@ main{
 }
 
 .bannertxt p{
-    font-size:0.8rem;
+    font-size:1rem;
     color:var(--main-par);
     margin:1rem auto;
     width:19rem;
@@ -247,7 +248,7 @@ main{
 .bannertxt::after{
     content:'';
     position: absolute;
-    width: 60vw;
+    width: 47vw;
     height: 85vh;
     right:0;
     bottom:-20rem;
@@ -289,7 +290,7 @@ main{
 
     .bannertxt p{
         width: 30rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     /* Size for accent design behind phone container */
