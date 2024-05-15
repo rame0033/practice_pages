@@ -219,7 +219,7 @@ main{
     content:'';
     position: absolute;
     width: 48vw;
-    height: 85vh;
+    height: 40rem;
     left:0;
     top:0;
     background: linear-gradient(279deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
@@ -249,9 +249,9 @@ main{
     content:'';
     position: absolute;
     width: 47vw;
-    height: 85vh;
-    right:0;
-    bottom:-20rem;
+    height: 36rem;
+    right: 0;
+    bottom: -5rem;
     background: var(--light-grayish-violet);
     z-index: -1;
     border-radius:5rem 5rem 0 0;
@@ -271,7 +271,7 @@ main{
 }
 
 /* Styling for larger screens */
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
     main{
         flex-direction: row;
         justify-content: center;
@@ -291,6 +291,7 @@ main{
     .bannertxt p{
         width: 30rem;
         font-size: 1.1rem;
+        padding:0;
     }
 
     /* Size for accent design behind phone container */
