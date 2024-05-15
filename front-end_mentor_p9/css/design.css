@@ -249,9 +249,9 @@ main{
     content:'';
     position: absolute;
     width: 47vw;
-    height: 36rem;
+    height: 640px;
     right: 0;
-    bottom: -8rem;
+    top: 480px;
     background: var(--light-grayish-violet);
     z-index: -1;
     border-radius: 11rem 0 0 0;
@@ -304,9 +304,9 @@ main{
     /* Size for accent design behind banner text */
     .bannertxt::after{
         width: 26vw;
-        height: 78vh;
+        height: 56vh;
         right: 0;
-        bottom: -5rem;
+        top: 53vh;
         border-radius: 11rem 0 0 0;
     }
 }
