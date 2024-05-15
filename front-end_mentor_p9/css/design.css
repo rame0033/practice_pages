@@ -224,7 +224,7 @@ main{
     top:0;
     background: linear-gradient(279deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
     z-index: -1;
-    border-radius:0 0 0 5rem;
+    border-radius:0 0 16rem 0;
 }
 .bannertxt{
     text-align: center;
@@ -251,10 +251,11 @@ main{
     width: 47vw;
     height: 36rem;
     right: 0;
-    bottom: -5rem;
+    bottom: -8rem;
     background: var(--light-grayish-violet);
     z-index: -1;
-    border-radius:5rem 5rem 0 0;
+    border-radius: 11rem 0rem 0 0;
+}
 }
 .attribution{
     text-align: center;
