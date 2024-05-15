@@ -1,0 +1,15 @@
+/* GOOGLE FONT - RUBIK */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    def-white: hsl(293, 100%, 63%);
+    app-background: hsl(270, 20%, 96%);
+    submit-btn:  hsl(271, 36%, 24%);
+    radio-btn:hsl(289, 100%, 72%);
+    sub-head: hsl(276, 100%, 81%);
+    left-chattxt: hsl(276, 55%, 52%);
+    right-chattxt: hsl(271, 15%, 43%);
+    placeholder: hsl(206, 6%, 79%);
+    main-headtxt: hsl(271, 36%, 24%);
+    main-par:hsl(270, 7%, 64%);
+}
