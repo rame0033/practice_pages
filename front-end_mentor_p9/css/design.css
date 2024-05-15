@@ -2,14 +2,245 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
-    def-white: hsl(293, 100%, 63%);
-    app-background: hsl(270, 20%, 96%);
-    submit-btn:  hsl(271, 36%, 24%);
-    radio-btn:hsl(289, 100%, 72%);
-    sub-head: hsl(276, 100%, 81%);
-    left-chattxt: hsl(276, 55%, 52%);
-    right-chattxt: hsl(271, 15%, 43%);
-    placeholder: hsl(206, 6%, 79%);
-    main-headtxt: hsl(271, 36%, 24%);
-    main-par:hsl(270, 7%, 64%);
+    --def-white: hsl(0, 0%, 100%);
+    --app-background: hsl(270, 20%, 96%);
+    --submit-btn:  hsl(271, 36%, 24%);
+    --radio-btn:hsl(289, 100%, 72%);
+    --sub-head: hsl(276, 100%, 81%);
+    --left-chattxt: hsl(276, 55%, 52%);
+    --right-chattxt: hsl(271, 15%, 43%);
+    --placeholder: hsl(206, 6%, 79%);
+    --main-headtxt: hsl(271, 36%, 24%);
+    --main-par:hsl(270, 7%, 64%);
+    --light-grayish-violet:hsl(270, 20%, 96%);
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+}
+
+/* Typography */
+h1{
+    font-family:Rubik, sans-serif;
+    font-weight:500;
+    color:var(--main-headtxt);
+}
+
+p, span{
+    font-family:Rubik, sans-serif;
+    font-weight:400;
+}
+
+.bx{
+    font-size:1.5rem;
+    color:var(--def-white);
+}
+
+/* Position for main elements */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    padding:5rem 1rem;
+}
+/* Phone style */
+.phone{
+    width:17rem;
+    background:var(--app-background); /* for testing */
+    border: 1rem solid var(--def-white);
+    border-radius:2.5rem;
+    box-shadow: 5px 14px 20px 5px rgba(0, 0, 0, 0.23);
+}
+
+/* MSG HEADER */
+.profilehead{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem 1rem 0rem;
+    background:linear-gradient(76deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 72%);
+    border-radius: 2rem 2rem 0.5rem 0.5rem;
+}
+
+.profileImg{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 0.1rem solid var(--def-white);
+}
+
+.bx-dots-vertical-rounded{
+    flex-grow:2;
+    text-align: right;
+}
+
+/* Font-color for profile header */
+.profile_txt .name{
+    color:var(--def-white);
+    font-weight:500;
+}
+
+.profile_txt .stat{
+    color:var(--sub-head);
+    font-size:0.65rem;
+    margin-top:0.25rem;
+}
+
+/* MSG BODY */
+.messages{
+    background-color:var(--app-background);
+    padding:0.5rem;
+    border-radius: 2rem;
+}
+
+/* MSG */
+.incoming p{
+    max-width:9rem;
+    color: var(--left-chattxt);
+    background-color:#fbdeff;
+    font-size:0.65rem;
+    padding:0.5rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+    line-height:0.7rem;
+    margin-top:1rem;
+}
+
+.incoming1 p:first-child{
+    margin-top:0;
+}
+
+/* Message position to right side */
+.outgoing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.outgoing p{
+    max-width:9rem;
+    color: var(--right-chattxt);
+    background-color:#f3f3f3;
+    font-size:0.65rem;
+    padding:0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+    line-height:0.7rem;
+    margin-top:1rem;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.21);
+}
+
+.sent_img img{
+    width:3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* MSG OPTIONS */
+.options{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(274deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 67%);
+    max-width:14rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius:0.5rem;
+}
+
+.time{
+    font-size:0.8rem;
+    color:#f6d5ff;
+    display: flex;
+    align-items: center;
+}
+
+/* RADIO BTN */
+.time:before{
+    content:'';
+    display:inline-block;
+    height:1rem;
+    width:1rem;
+    border:0.1rem solid var(--radio-btn);
+    border-radius:50%;
+    margin-right:0.5rem;
+}
+
+/* PRICE */
+.price{
+    font-weight: 700;
+    color:var(--def-white);
+    padding-right:0.5rem;
+}
+
+/* TEXTBOX COMP */
+.txtbox{
+    display:flex;
+    align-items: center;
+    padding:0.5rem;
+    background:var(--def-white);
+    border-radius: 1.7rem;
+    margin:1rem 0 0.3rem;
+}
+
+.placeholder{
+    color:var(--placeholder);
+    font-size:0.8rem;
+    margin-left:0.5rem;
+    flex-grow: 2;
+}
+
+.bx-chevron-right{
+    background-color: var(--submit-btn);
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+/* Add a phone notch */
+.phone::after{
+    content:'';
+    position: absolute;
+    margin-top:-37rem;
+    margin-left:3.25rem;
+    width: 11rem;
+    height: 1rem;
+    background: var(--def-white);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.bannertxt{
+    text-align: center;
+    padding:0 0.5rem;
+}
+
+.bannertxt h1{
+    font-size:2.5rem;
+}
+
+.bannertxt p{
+    font-size:0.8rem;
+    color:var(--main-par);
+    margin:1rem auto;
+    width:19rem;
+    line-height: 1.5rem;
+    padding:0 0 4rem 0;
+}
+
+.attribution{
+    text-align: center;
+    line-height:2rem;
+    color:var(--def-white);
+    background-color:darkviolet;
+    width:100%;
+    padding:2rem 0;
+}
+
+.attribution a{
+    color:var(--def-white);
+    text-decoration: none;
 }
