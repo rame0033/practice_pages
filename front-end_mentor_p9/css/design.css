@@ -64,7 +64,7 @@ main{
     align-items: center;
     padding: 2rem 0rem 1rem 0rem;
     background:linear-gradient(76deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 72%);
-    border-radius: 2rem 2rem 0.5rem 0.5rem;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
 }
 
 .profileImg{
