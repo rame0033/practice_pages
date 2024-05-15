@@ -21,79 +21,82 @@
 
 <body>
 
-  <div class="phone">
+  <main>
+    <div class="phone">
 
-    <!-- Message header -->
-    <div class="profilehead">
-      <i class='bx bx-chevron-left'></i>
-      <img src="./assets/avatar.jpg" class="profileImg" alt="#">
-      <div class="profile_txt">
-        <p class="name">Samuel Green</p>
-        <p class="stat">Available to Walk</p>
+      <!-- Message header -->
+      <div class="profilehead">
+        <i class='bx bx-chevron-left'></i>
+        <img src="./assets/avatar.jpg" class="profileImg" alt="#">
+        <div class="profile_txt">
+          <p class="name">Samuel Green</p>
+          <p class="stat">Available to Walk</p>
+        </div>
+        <i class='bx bx-dots-vertical-rounded'></i>
       </div>
-      <i class='bx bx-dots-vertical-rounded'></i>
+
+      <div class="messages">
+
+        <!-- First incoming msg -->
+        <div class="incoming incoming1">
+          <p>That sounds great. I&#39;d be happy with that.</p>
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+
+        <!-- Outgoing msg -->
+        <div class="outgoing">
+
+          <!-- Dog pics -->
+          <div class="sent_img">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+
+          <p>Here are a few pictures. She&#39;s a happy girl!</p>
+
+          <p>Can you make it?</p>
+        </div>
+
+        <!-- Second incoming msg -->
+        <div class="incoming incoming2">
+          <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+
+          <!-- Options -->
+          <div class="options option1">
+            <span class="time">30 minute walk</span>
+            <span class="price">$29</span>
+          </div>
+
+          <div class="options option2">
+            <span class="time">1 hour walk</span>
+            <span class="price">$49</span>
+          </div>
+        </div>
+
+        <!-- Textbox -->
+        <div class="txtbox">
+          <p class="placeholder">Type a message…</p>
+          <i class='bx bx-chevron-right'></i>
+        </div>
+      </div>
     </div>
 
-    <div class="messages">
 
-      <!-- First incoming msg -->
-      <div class="incoming incoming1">
-        <p>That sounds great. I&#39;d be happy with that.</p>
-        <p>Could you send over some pictures of your dog, please?</p>
-      </div>
+    <div class="bannertxt">
+      <h1>Simple booking</h1>
 
-      <!-- Outgoing msg -->
-      <div class="outgoing">
-
-        <!-- Dog pics -->
-        <div class="sent_img">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-
-        <p>Here are a few pictures. She&#39;s a happy girl!</p>
-
-        <p>Can you make it?</p>
-      </div>
-
-      <!-- Second incoming msg -->
-      <div class="incoming incoming2">
-        <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-
-        <!-- Options -->
-        <div class="options option1">
-          <span class="time">30 minute walk</span>
-          <span class="price">$29</span>
-        </div>
-
-        <div class="options option2">
-          <span class="time">1 hour walk</span>
-          <span class="price">$49</span>
-        </div>
-      </div>
-
-      <!-- Textbox -->
-      <div class="txtbox">
-        <p class="placeholder">Type a message…</p>
-        <i class='bx bx-chevron-right'></i>
-      </div>
+      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.</p>
     </div>
-  </div>
 
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#">Your Name Here</a>.</p>
+    </div>
 
-  <div class="bannertxt">
-    <h1>Simple booking</h1>
-
-    <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
-      discuss arrangements and make bookings. Once the walk has been completed you can rate
-      your walker and book again all through the chat.</p>
-  </div>
-
-  <div class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-    <p>Coded by <a href="#">Your Name Here</a>.</p>
-  </div>
+  </main>
 </body>
 
 </html>
