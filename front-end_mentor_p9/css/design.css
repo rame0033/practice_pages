@@ -250,7 +250,7 @@ main{
     width: 60vw;
     height: 85vh;
     right:0;
-    bottom:-30rem;
+    bottom:-20rem;
     background: var(--light-grayish-violet);
     z-index: -1;
     border-radius:5rem 5rem 0 0;
@@ -267,4 +267,42 @@ main{
 .attribution a{
     color:var(--def-white);
     text-decoration: none;
+}
+
+/* Styling for larger screens */
+@media screen and (min-width:800px){
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:3rem;
+    }
+
+    .container{
+        padding:3rem 1rem 4rem;
+    }
+
+    /* Left align for banner text */
+    .bannertxt{
+        text-align: left;
+    }
+
+    .bannertxt p{
+        width: 25rem;
+    }
+
+    /* Size for accent design behind phone container */
+    .container::before{
+        width: 37vw;
+        border-radius: 0rem 0 20rem 20rem;
+    }
+
+    /* Size for accent design behind banner text */
+    .bannertxt::after{
+        width: 26vw;
+        height: 78vh;
+        right: 0;
+        bottom: -5rem;
+        border-radius: 11rem 11rem 0 0;
+    }
 }
