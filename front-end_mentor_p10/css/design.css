@@ -8,11 +8,11 @@
     --grayish-blue:hsl(201, 11%, 66%);
 }
 
-body{
+/* body{
     display: grid;
     place-items: center;
     min-height:100vh;
-}
+} */
 
 /* TYPOGRAPHY */
 h1,h2,h3,h4 {
@@ -27,7 +27,7 @@ p, a{
 }
 
 /* Master header banner */
-.masthead{
+.headerwrap{
     max-width:1200px;
     margin: 0 auto;
     padding:1rem;
@@ -35,6 +35,10 @@ p, a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* Add background to header */
+.masthead{
     background: url(../images/bg-header-mobile.png) no-repeat center center;
     background-size: cover;
 }
@@ -73,7 +77,7 @@ p, a{
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    padding:1rem;
+    padding:1rem 1rem 5rem 1rem;
     width:100%;
 }
 
@@ -94,11 +98,38 @@ p, a{
 
 .iOSbtn{
     background-color: var(--strong-cyan);
+    box-shadow: 2px 10px 10px -2px rgba(38,186,164,0.36);
 }
 
 .Macbtn{
     background-color: var(--light-blue);
+    box-shadow:2px 10px 10px -2px rgba(97,115,255,0.36);
+}
 
+/* MAIN SECTION */
+
+/* Styling for main headings */
+main h2,
+.workflow h2,
+.CTA h4{
+    font-size: 1.5rem;
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styling for main paragraphs */
+main p,
+.workflow p,
+.CTA p{
+    font-size: 0.9rem;
+    color: var(--grayish-blue);
+    line-height: 1.5rem;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Max-width for main section IMG */
@@ -106,3 +137,263 @@ main img{
     max-width: 100%;
 }
 
+.FeatImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 1rem;
+
+}
+
+/* Features text */
+
+/* FEATURES HEADINGS */
+
+.feattxt h3,
+.workfeat h3{
+    text-align:center;
+    margin-top:1.5rem;
+    font-size: 1.25rem;
+}
+
+/* ACCESS SECTION */
+.AccessClip{
+    padding:4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add spacing between image and text wrap */
+.accessIMG{
+    padding-top:3rem;
+}
+
+/* WORKFLOW SECTION */
+.workflow{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workfeat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PARTNER LOGOS */
+.logowrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    max-width: 1200px;
+    padding: 5rem 1rem; 
+}
+
+.logowrap img{
+    flex-basis: 1rem;
+}
+
+/* CTA Section */
+.CTA{
+    max-width:1200px;
+    margin: 0 auto;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(215, 215, 215);
+    color: #fffafa;
+    text-align: center;
+    padding: 2rem 0;
+    width:100%;
+}
+
+.footimg img{
+    width:4.5rem;
+}
+/* Styling footer wrap and footer links */
+.main_foot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    gap: 3rem;
+}
+
+.footLink{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+/* Styling footer links */
+.footLink a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue)
+}
+
+/* Styling footer social icons */
+.footSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/* ATTRIBUTION */
+.attribution{
+    padding-top: 3rem;
+}
+.attribution p{
+    color:var(--dark-grayish-blue);
+    line-height: 2rem;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:var(--dark-grayish-blue);
+}
+
+@media screen and (min-width: 820px){
+
+    /* Styling CTA button for tablet view */
+    .btnwrap{
+        flex-direction: row;
+        gap: 2rem;
+        padding:1rem 1rem 5rem 1rem;
+    }
+    .ctabtn{
+        width: 20%;
+    }
+
+    /* Add larger background */
+    .masthead{
+        background: url(../images/bg-header-desktop.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    /* LOGO WRAP FOR LARGER SCREENS */
+    .logowrap{
+        flex-direction: row;
+        gap: 4rem;
+        margin:0 auto;
+    }
+    
+    .logowrap img{
+        flex-basis: 150px;
+    }
+
+}
+
+/* Add media query for desktop view */
+@media screen and (min-width:1200px){
+
+    /* HEADING */
+    .masthead h1{
+        font-size:2rem;
+    }
+    /* Width for banner text wrap */
+    .masthead .txtwrap{
+        width:50%;
+    }
+
+    /* Feature text wrap */
+    main p{
+        width:50%;
+    }
+
+    /* Styling for main features */
+    .featWrap{
+        display:flex;
+        gap:1rem;
+    }
+
+    .FeatImg{
+        margin-left: -3rem;
+    }
+
+    .FeatImg img{
+        width:55vw;
+    }
+
+    .FeatTXTwrap{
+        margin-top:5rem;
+    }
+
+    .feattxt h3{
+        text-align:left;
+        font-size:1.5rem;
+        width: 65%;
+        padding-left:1rem;
+    }
+    
+    .feattxt p{
+        width:65%;
+        margin:0;
+        text-align: left;
+    }
+
+    /* HEADINGS for larger screens */
+    main h2,
+    .workflow h2,
+    .CTA h4{
+        font-size: 1.75rem;
+    }
+
+    /* WORKFLOW FEATURES */
+    .workflow_wrap{
+        display: flex;
+        justify-content: space-between;
+        padding-top:4rem;
+    }
+
+    .workfeat{
+        width:25rem;
+        justify-content: flex-start;
+    }
+
+    /* FOOTER */
+    .main_foot{
+        padding-top:2rem;
+        flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    /* Footer links */
+    .footLink{
+        flex-wrap: wrap;
+    flex-direction: row;
+    width: 25rem;
+    margin-right:10rem;
+    }
+    
+    .footLink a{
+        text-align: left;
+        width:7rem;
+    }
+
+    /* Logo image on footer */
+    .footimg{
+        margin: 0 4rem 0 1rem;
+    }
+
+    .attribution{
+        margin-top:2rem;
+        font-size: 0.75rem;
+        line-height: 0.5rem;
+    }
+}
