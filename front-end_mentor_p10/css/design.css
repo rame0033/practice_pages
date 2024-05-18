@@ -1,18 +1,11 @@
-/* GOOGLE FONT - RUBIK */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* GOOGLE FONT - BAI JAMJUREE */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root{
-    --def-white: hsl(0, 0%, 100%);
-    --app-background: hsl(270, 20%, 96%);
-    --submit-btn:  hsl(271, 36%, 24%);
-    --radio-btn:hsl(289, 100%, 72%);
-    --sub-head: hsl(276, 100%, 81%);
-    --left-chattxt: hsl(276, 55%, 52%);
-    --right-chattxt: hsl(271, 15%, 43%);
-    --placeholder: hsl(206, 6%, 79%);
-    --main-headtxt: hsl(271, 36%, 24%);
-    --main-par:hsl(270, 7%, 64%);
-    --light-grayish-violet:hsl(270, 20%, 96%);
+    --strong-cyan:hsl(171, 66%, 44%);
+    --light-blue:hsl(233, 100%, 69%);
+    --dark-grayish-blue:hsl(210, 10%, 33%);
+    --grayish-blue:hsl(201, 11%, 66%);
 }
 
 body{
@@ -20,3 +13,96 @@ body{
     place-items: center;
     min-height:100vh;
 }
+
+/* TYPOGRAPHY */
+h1,h2,h3,h4 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+}
+
+p, a{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+}
+
+/* Master header banner */
+.masthead{
+    max-width:1200px;
+    margin: 0 auto;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/bg-header-mobile.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* Header Logo */
+.masthead .imgwrap{
+    display:flex;
+    padding:3rem;
+}
+
+/* Header text wrap */
+.masthead .txtwrap{
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Header H1 */
+.masthead h1{
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom:1.3rem;
+}
+
+/* Header P */
+.masthead p{
+    font-size: 0.9rem;
+    color: var(--grayish-blue);
+    line-height: 1.5rem;;
+    margin-bottom: 1.5rem;
+}
+
+/* BUTTON Style */
+.btnwrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    width:100%;
+}
+
+.btnwrap a{
+    text-decoration: none;
+    color: #fffafa;
+    font-size:1rem;
+    text-align: center;
+}
+
+/* Individual button styling */
+.ctabtn{
+    padding:1rem;
+    border-radius: 25px;
+    width:80%;
+    transition: all 0.3s ease;
+}
+
+.iOSbtn{
+    background-color: var(--strong-cyan);
+}
+
+.Macbtn{
+    background-color: var(--light-blue);
+
+}
+
+/* Max-width for main section IMG */
+main img{
+    max-width: 100%;
+}
+
