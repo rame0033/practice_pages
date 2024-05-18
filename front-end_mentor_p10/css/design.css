@@ -8,12 +8,6 @@
     --grayish-blue:hsl(201, 11%, 66%);
 }
 
-/* body{
-    display: grid;
-    place-items: center;
-    min-height:100vh;
-} */
-
 /* TYPOGRAPHY */
 h1,h2,h3,h4 {
     font-family: 'Bai Jamjuree', sans-serif;
