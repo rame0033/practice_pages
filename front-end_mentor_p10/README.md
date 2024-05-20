@@ -29,20 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![alt text](image.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://github.com/rame0033/practice_pages/tree/main/front-end_mentor_p10)
+- [Live Site](https://rame0033.github.io/practice_pages/front-end_mentor_p10/)
 
 ## My process
 
@@ -51,61 +43,48 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Practicing more on layouts especially on the main section by using the flexbox to place the desktop image on the left most part to display a cropped version of the image.
 
-To see how you can add code snippets, see below:
+This is how I do the coding to achieve it
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+  @media screen and (min-width: 1200px) {
+    .featWrap {
+        display: flex;
+        gap: 1rem;
+    }
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+      .FeatImg {
+        margin-left: -3rem;
+    }
+  }
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+![Desktop version of the main section](image-1.png)
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I acknowledge the goal of the challenge is for optimizing layouts for various screens, and I tried to do accessibility practices as well such as
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Adding skip links
+- Adding scale on `hover` and `active` states for links
+- Contrast between foreground and background colors
+- Using ARIA for images and button links
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/?fcolor=990505&bcolor=FFFBE0) - This helped me for checking contrast between my text color and background color.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Skip Links](https://www.w3schools.com/accessibility/accessibility_skip_links.php) - This helped me to have an understanding what are skip links for and how to do it.
+
+- [Back To Top Button from Stack Overflow](https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only) - This is a discussion page that helped me to do a HTML/CSS only Back To Top Button.
+
+- [W3C Decorative Images](https://www.w3.org/WAI/tutorials/images/decorative/) - Article that helped me to give element role for decorative images to hide it from screen-reader.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@rame0033](https://www.frontendmentor.io/profile/rame0033)
