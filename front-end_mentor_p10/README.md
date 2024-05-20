@@ -53,16 +53,16 @@ Practicing more on layouts especially on the main section by using the flexbox t
 
 This is how I do the coding to achieve it
 
-  @media screen and (min-width: 1200px) {
-    .featWrap {
+      @media screen and (min-width: 1200px) {
+      .featWrap {
         display: flex;
         gap: 1rem;
-    }
+      }
 
       .FeatImg {
         margin-left: -3rem;
+      }
     }
-  }
 
 ![Desktop version of the main section](image-1.png)
 
