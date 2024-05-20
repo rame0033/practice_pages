@@ -420,6 +420,7 @@ footer{
     .footLink a:hover,
     .footLink a:focus{
         outline: none;
+        color:var(--ios-btn);
         text-decoration: underline;
     }
 
