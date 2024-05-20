@@ -8,8 +8,12 @@
     --grayish-blue:hsl(208, 12%, 31%);
 }
 
-/* Add scroll behavior for webpage (Skip links) */
+/* Add min-height for webpage,
+ scroll behavior for webpage (Skip links) */
 html{
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
