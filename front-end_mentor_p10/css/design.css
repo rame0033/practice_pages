@@ -247,6 +247,13 @@ footer{
     gap: 4rem;
 }
 
+/* SocMed footer links */
+.footSocial a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+}
+
 /* ATTRIBUTION */
 .attribution{
     padding-top: 3rem;
@@ -422,6 +429,10 @@ footer{
         outline: none;
         color:var(--ios-btn);
         text-decoration: underline;
+    }
+
+    .footSocial a:hover{
+        color:var(--ios-btn);
     }
 
     .ctabtn:hover,
