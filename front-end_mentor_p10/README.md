@@ -65,7 +65,7 @@ This is how I do the coding to achieve it
 I acknowledge the goal of the challenge is for optimizing layouts for various screens, and I tried to do accessibility practices as well such as
 
 - Adding skip links
-- Adding scale on `hover` and `active` states for links
+- Adding scale changes on `hover` and `active` states for links
 - Contrast between foreground and background colors
 - Using ARIA for images and button links
 
