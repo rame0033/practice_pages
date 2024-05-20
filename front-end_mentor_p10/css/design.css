@@ -261,6 +261,22 @@ footer{
     color:var(--dark-grayish-blue);
 }
 
+/* Style for skip links */
+.visually-hidden-focusable {
+    position: absolute;
+    left: -7rem;
+    top: -4rem;
+    padding:1rem;
+    overflow: hidden;
+}
+
+.visually-hidden-focusable:focus {
+    top:0;
+    left:0;
+    font-size:1rem;
+    background-color:var(--ios-btn);
+    color:#fffafa;
+  }
 @media screen and (min-width: 820px){
 
     /* Adjust paragraph font-size for larger screens */
