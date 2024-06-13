@@ -179,7 +179,7 @@ input {
 .logos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1200px;
     padding: 2rem;
     margin: 0 auto;
@@ -188,6 +188,7 @@ input {
 .logos img {
     height: 1.5rem;
     padding: 1rem;
+    flex-basis:5rem;
 }
 
 /* Styling the escrow portion */
