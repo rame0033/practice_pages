@@ -1,0 +1,72 @@
+body {
+    background: rgba(255, 255, 255, 0.7) url("https://images.pexels.com/photos/1536302/pexels-photo-1536302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center / cover;
+    font: bold 16px/1.5 Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #fffef0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main{
+    max-width:1000px;
+    background: rgba(152, 169, 72, 0.28);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.btn-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #313638;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease
+}
+
+#increment-btn {
+    border: 0.2rem solid #ff5252;
+}
+
+#increment-btn:hover {
+    background-color: #ff5252;
+    color: #fffef0;
+}
+
+#save-btn {
+    border: 0.2rem solid #10b713;
+}
+
+.entries{
+    max-width:75%;
+    margin:0 auto;
+    padding:0.2rem 0.6rem;
+    
+}
+
+#save-btn:hover {
+    background-color: #10b713;
+    color: #fffef0;
+}
