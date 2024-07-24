@@ -73,6 +73,7 @@ main {
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 10px 10px black;
+    transition: all 0.1s ease;
 }
 
 /* Alignmant for the profile wrap */
