@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/rame0033/rame0033.github.io/tree/main/front-end_mentor_p4)
-- Live Site URL: (https://rame0033.github.io/front-end_mentor_p4/)
+- [Solution URL](https://github.com/rame0033/practice_pages/tree/main/10_huddleland)
+- [Live Site URL](https://rame0033.github.io/practice_pages/10_huddleland/)
 
 ## My process
 

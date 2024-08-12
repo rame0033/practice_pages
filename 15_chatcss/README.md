@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/rame0033/practice_pages/tree/main/front-end_mentor_p9)
-- [Live Site](https://rame0033.github.io/practice_pages/front-end_mentor_p9/)
+- [Solution](https://github.com/rame0033/practice_pages/tree/main/15_chatcss)
+- [Live Site](https://rame0033.github.io/practice_pages/15_chatcss)
 
 ## My process
 

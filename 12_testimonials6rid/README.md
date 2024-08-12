@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/rame0033/rame0033.github.io/tree/main/front-end_mentor_p6)
-- Live Site URL: (https://rame0033.github.io/front-end_mentor_p6/)
+- [Solution URL](https://rame0033.github.io/practice_pages/12_testimonials6rid/)
+- [Live Site URL](https://rame0033.github.io/front-end_mentor_p6/)
 
 ## My process
 

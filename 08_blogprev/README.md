@@ -31,8 +31,8 @@ Users should be able to:
 ![Alt text](image.png)
 ### Links
 
-- Solution URL: (https://github.com/rame0033/rame0033.github.io/tree/main/front-end_mentor_p2)
-- Live Site URL: (https://rame0033.github.io/front-end_mentor_p2/)
+- [Solution URL](https://github.com/rame0033/practice_pages/tree/main/08_blogprev)
+- [Live Site URL](https://rame0033.github.io/practice_pages/08_blogprev)
 
 ## My process
 
