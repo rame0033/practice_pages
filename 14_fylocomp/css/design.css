@@ -17,7 +17,6 @@ body{
     min-height: 100vh;
     place-items:center;
     background: var(--VeryDarkBlue) url('../assets/bg-mobile.png') no-repeat center;
-    grid-template-rows: 1fr auto;
     background-size: cover;
 }
 
@@ -212,6 +211,6 @@ footer a{
     /* Adjust position of footer */
     footer{
         position: relative;
-        bottom: 1rem;
+        bottom: -6rem;
     }
 }
