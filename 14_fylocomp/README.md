@@ -32,7 +32,7 @@ Users should be able to:
 
 I learned how to do the progress bar by using div, and span to put the fill in the bar
 
-To see how you can add code snippets, see below:
+I have included a snippet here on what I did to put a progress bar on the HTML component
 
 ### HTML
       <!-- Progress bar -->
